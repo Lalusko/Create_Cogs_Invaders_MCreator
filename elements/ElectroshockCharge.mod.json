@@ -1,0 +1,27 @@
+{
+  "_fv": 73,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:ElectroshockChargeIcon"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "CUSTOM:electroshock_throw"
+    },
+    "igniteFire": false,
+    "power": 2.5,
+    "damage": 0.1,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.19999999999999998,
+    "modelHeight": 0.2,
+    "onHitsPlayer": {
+      "name": "ElectroshockChargeEffectApply"
+    },
+    "onHitsEntity": {
+      "name": "ElectroshockChargeEffectApply"
+    }
+  }
+}

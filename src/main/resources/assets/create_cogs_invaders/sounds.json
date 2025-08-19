@@ -1,0 +1,128 @@
+{
+  "bolt_release": {
+    "subtitle": "subtitles.bolt_release",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:bolt_release",
+        "stream": false
+      }
+    ]
+  },
+  "pellet_shoot": {
+    "subtitle": "subtitles.pellet_shoot",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:fire",
+        "stream": false
+      }
+    ]
+  },
+  "fwoomp": {
+    "subtitle": "subtitles.fwoomp",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:fwoomp",
+        "stream": false
+      }
+    ]
+  },
+  "heavy_cog_death": {
+    "subtitle": "subtitles.heavy_cog_death",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:dispenser_destroy",
+        "stream": false
+      }
+    ]
+  },
+  "the_story_unfolds": {
+    "subtitle": "subtitles.the_story_unfolds",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:jingle-punks-the-story-unfolds",
+        "stream": true
+      }
+    ]
+  },
+  "electroshock_effect": {
+    "subtitle": "subtitles.electroshock_effect",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:electroshock_effect",
+        "stream": false
+      }
+    ]
+  },
+  "ominous_horn": {
+    "subtitle": "subtitles.ominous_horn",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:ominous_horn",
+        "stream": false
+      }
+    ]
+  },
+  "cog_death": {
+    "subtitle": "subtitles.cog_death",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:robot_death",
+        "stream": false
+      }
+    ]
+  },
+  "cog_hurt": {
+    "subtitle": "subtitles.cog_hurt",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:robot_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "electroshock_throw": {
+    "subtitle": "subtitles.electroshock_throw",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:electroshock_throw",
+        "stream": false
+      }
+    ]
+  },
+  "station_error": {
+    "subtitle": "subtitles.station_error",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:station_error",
+        "stream": false
+      }
+    ]
+  },
+  "station_reload": {
+    "subtitle": "subtitles.station_reload",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:station_reload",
+        "stream": false
+      }
+    ]
+  },
+  "station_use": {
+    "subtitle": "subtitles.station_use",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:station_use",
+        "stream": false
+      }
+    ]
+  },
+  "tank_tracks": {
+    "subtitle": "subtitles.tank_tracks",
+    "sounds": [
+      {
+        "name": "create_cogs_invaders:tank_tacks_1",
+        "stream": false
+      }
+    ]
+  }
+}

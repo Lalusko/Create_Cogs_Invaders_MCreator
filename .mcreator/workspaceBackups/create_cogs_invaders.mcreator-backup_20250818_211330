@@ -1,0 +1,225 @@
+{
+  "mod_elements": [
+    {
+      "name": "ElectroshockCharge",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroshock_charge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/ElectroshockChargeEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "ElectroshockChargeIcon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroshock_charge_icon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/ElectroshockChargeIconItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/electroshock_charge_icon.json"
+        ]
+      },
+      "path": "~/Projectiles"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "bolt_release",
+      "files": [
+        "bolt_release"
+      ],
+      "category": "player",
+      "subtitle": "Battery Reload"
+    },
+    {
+      "name": "pellet_shoot",
+      "files": [
+        "fire"
+      ],
+      "category": "hostile",
+      "subtitle": "Pellet Shoot"
+    },
+    {
+      "name": "fwoomp",
+      "files": [
+        "fwoomp"
+      ],
+      "category": "hostile",
+      "subtitle": "Fwoomp"
+    },
+    {
+      "name": "heavy_cog_death",
+      "files": [
+        "dispenser_destroy"
+      ],
+      "category": "hostile",
+      "subtitle": "Heavy Cog Death"
+    },
+    {
+      "name": "the_story_unfolds",
+      "files": [
+        "jingle-punks-the-story-unfolds"
+      ],
+      "category": "music",
+      "subtitle": "The Story Unfolds"
+    },
+    {
+      "name": "electroshock_effect",
+      "files": [
+        "electroshock_effect"
+      ],
+      "category": "hostile",
+      "subtitle": "Electroshock"
+    },
+    {
+      "name": "ominous_horn",
+      "files": [
+        "ominous_horn"
+      ],
+      "category": "hostile",
+      "subtitle": "Military Cog Horn"
+    },
+    {
+      "name": "cog_death",
+      "files": [
+        "robot_death"
+      ],
+      "category": "hostile",
+      "subtitle": "Cog Death"
+    },
+    {
+      "name": "cog_hurt",
+      "files": [
+        "robot_hurt"
+      ],
+      "category": "hostile",
+      "subtitle": "Cog Hurt"
+    },
+    {
+      "name": "electroshock_throw",
+      "files": [
+        "electroshock_throw"
+      ],
+      "category": "hostile",
+      "subtitle": "Electroshock Charge Shoot"
+    },
+    {
+      "name": "station_error",
+      "files": [
+        "station_error"
+      ],
+      "category": "block",
+      "subtitle": "Station Error"
+    },
+    {
+      "name": "station_reload",
+      "files": [
+        "station_reload"
+      ],
+      "category": "block",
+      "subtitle": "Station Reload"
+    },
+    {
+      "name": "station_use",
+      "files": [
+        "station_use"
+      ],
+      "category": "block",
+      "subtitle": "Station Use"
+    },
+    {
+      "name": "tank_tracks",
+      "files": [
+        "tank_tacks_1"
+      ],
+      "category": "hostile",
+      "subtitle": "Heavy Cog Tracks"
+    }
+  ],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "subtitles.ominous_horn": "Military Cog Horn",
+      "subtitles.bolt_release": "Battery Reload",
+      "subtitles.station_use": "Station Use",
+      "subtitles.electroshock_throw": "Electroshock Charge Shoot",
+      "subtitles.fwoomp": "Fwoomp",
+      "subtitles.tank_tracks": "Heavy Cog Tracks",
+      "subtitles.pellet_shoot": "Pellet Shoot",
+      "subtitles.station_reload": "Station Reload",
+      "subtitles.electroshock_effect": "Electroshock",
+      "subtitles.heavy_cog_death": "Heavy Cog Death",
+      "subtitles.the_story_unfolds": "The Story Unfolds",
+      "subtitles.cog_hurt": "Cog Hurt",
+      "subtitles.station_error": "Station Error",
+      "subtitles.cog_death": "Cog Death",
+      "item.create_cogs_invaders.electroshock_charge_icon": "Electroshock Charge Icon"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Equip",
+        "children": []
+      },
+      {
+        "name": "Projectiles",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "create_cogs_invaders",
+    "modName": "Create Cogs Invaders",
+    "version": "1.0.0",
+    "author": "PC, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "use_compiled_mods",
+      "geckolib",
+      "createnew"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.createcogsinvaders"
+  },
+  "mcreatorVersion": 202400452410
+}

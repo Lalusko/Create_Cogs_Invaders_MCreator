@@ -1,0 +1,138 @@
+{
+  "mod_elements": [
+    {
+      "name": "ElectroshockCharge",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroshock_charge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/ElectroshockChargeEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "TeslaCannon",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_cannon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/renderer/TeslaCannonItemRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/model/TeslaCannonItemModel.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/TeslaCannonItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/tesla_cannon.json"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "TeslaCannonShoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_cannon_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/TeslaCannonShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "ElectroshockChargeIcon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroshock_charge_icon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/ElectroshockChargeIconItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/electroshock_charge_icon.json"
+        ]
+      },
+      "path": "~/Projectiles"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.create_cogs_invaders.tesla_cannon": "Tesla Cannon",
+      "item.create_cogs_invaders.electroshock_charge_icon": "Electroshock Charge Icon"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Equip",
+        "children": []
+      },
+      {
+        "name": "Projectiles",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "create_cogs_invaders",
+    "modName": "Create Cogs Invaders",
+    "version": "1.0.0",
+    "author": "PC, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "use_compiled_mods",
+      "geckolib",
+      "createnew"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.createcogsinvaders"
+  },
+  "mcreatorVersion": 202400452410
+}

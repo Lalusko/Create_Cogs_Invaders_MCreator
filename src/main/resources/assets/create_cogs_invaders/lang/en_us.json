@@ -1,0 +1,18 @@
+{
+  "subtitles.ominous_horn": "Military Cog Horn",
+  "subtitles.bolt_release": "Battery Reload",
+  "subtitles.station_use": "Station Use",
+  "subtitles.electroshock_throw": "Electroshock Charge Shoot",
+  "subtitles.fwoomp": "Fwoomp",
+  "subtitles.tank_tracks": "Heavy Cog Tracks",
+  "subtitles.pellet_shoot": "Pellet Shoot",
+  "subtitles.station_reload": "Station Reload",
+  "subtitles.electroshock_effect": "Electroshock",
+  "subtitles.heavy_cog_death": "Heavy Cog Death",
+  "subtitles.the_story_unfolds": "The Story Unfolds",
+  "subtitles.cog_hurt": "Cog Hurt",
+  "effect.create_cogs_invaders.electroshock": "Electroshock",
+  "subtitles.station_error": "Station Error",
+  "subtitles.cog_death": "Cog Death",
+  "item.create_cogs_invaders.electroshock_charge_icon": "Electroshock Charge Icon"
+}
