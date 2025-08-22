@@ -14,7 +14,35 @@
     "renderStatusInHUD": true,
     "isCuredByMilk": false,
     "isProtectedByTotem": false,
-    "isCuredbyHoney": false,
-    "modifiers": []
+    "isCuredbyHoney": true,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -0.5,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": -0.5,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": -0.25,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
+    "onStarted": {
+      "name": "ElectroshockStarted"
+    },
+    "onActiveTick": {
+      "name": "ElectroshockActive"
+    }
   }
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "create_cogs_invaders:custom/cog_explorer_head",
+  "textures": {
+    "all": "create_cogs_invaders:block/copper_explorer_head",
+    "particle": "create_cogs_invaders:block/copper_explorer_head",
+    "1": "create_cogs_invaders:block/copper_explorer_head"
+  },
+  "render_type": "solid"
+}

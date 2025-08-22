@@ -1,6 +1,7 @@
 
 package net.mcreator.createcogsinvaders.entity;
 
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
@@ -28,21 +29,26 @@ import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModEntities;
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class ElectroshockChargeEntity extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(CreateCogsInvadersModItems.ELECTROSHOCK_CHARGE_ICON.get());
+	public static final int MAX_LIFETIME_TICKS = 60;
 
 	public ElectroshockChargeEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(CreateCogsInvadersModEntities.ELECTROSHOCK_CHARGE.get(), world);
+		this.setNoGravity(true);
 	}
 
 	public ElectroshockChargeEntity(EntityType<? extends ElectroshockChargeEntity> type, Level world) {
 		super(type, world);
+		this.setNoGravity(true);
 	}
 
 	public ElectroshockChargeEntity(EntityType<? extends ElectroshockChargeEntity> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
+		this.setNoGravity(true);
 	}
 
 	public ElectroshockChargeEntity(EntityType<? extends ElectroshockChargeEntity> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
+		this.setNoGravity(true);
 	}
 
 	@Override
@@ -80,10 +86,24 @@ public class ElectroshockChargeEntity extends AbstractArrow implements ItemSuppl
 	}
 
 	@Override
+	protected void onHitBlock(BlockHitResult hit) {
+		super.onHitBlock(hit);
+		if (!this.level().isClientSide) {
+			this.discard();
+		}
+	}
+
+	@Override
 	public void tick() {
 		super.tick();
-		if (this.inGround)
+
+		if (!this.isNoGravity()) {
+			this.setNoGravity(true);
+		}
+
+		if (!this.level().isClientSide && this.tickCount >= MAX_LIFETIME_TICKS) {
 			this.discard();
+		}
 	}
 
 	public static ElectroshockChargeEntity shoot(Level world, LivingEntity entity, RandomSource source) {

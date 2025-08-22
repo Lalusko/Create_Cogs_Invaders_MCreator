@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "create_cogs_invaders:block/explorer_head"
+    },
+    "facing=east": {
+      "model": "create_cogs_invaders:block/explorer_head",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "create_cogs_invaders:block/explorer_head",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "create_cogs_invaders:block/explorer_head",
+      "y": 270
+    }
+  }
+}

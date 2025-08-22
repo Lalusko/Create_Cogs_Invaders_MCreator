@@ -1,73 +1,97 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2025-08-18 20:05:25 -0600"
+      "unlock_right_away": "2025-08-21 17:59:38 -0600"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:plains": "2025-08-18 20:05:26 -0600"
+      "minecraft:plains": "2025-08-21 17:59:39 -0600"
     },
     "done": false
   },
   "create:root": {
     "criteria": {
-      "0": "2025-08-18 20:05:46 -0600"
+      "0": "2025-08-21 17:59:49 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_helmet": {
+  "minecraft:recipes/transportation/cherry_boat": {
     "criteria": {
-      "has_leather": "2025-08-18 20:44:11 -0600"
+      "in_water": "2025-08-21 18:28:12 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_leggings": {
+  "minecraft:recipes/transportation/bamboo_raft": {
     "criteria": {
-      "has_leather": "2025-08-18 20:44:11 -0600"
+      "in_water": "2025-08-21 18:28:12 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_chestplate": {
+  "minecraft:recipes/transportation/spruce_boat": {
     "criteria": {
-      "has_leather": "2025-08-18 20:44:11 -0600"
+      "in_water": "2025-08-21 18:28:12 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/misc/leather_horse_armor": {
+  "minecraft:recipes/transportation/birch_boat": {
     "criteria": {
-      "has_leather": "2025-08-18 20:44:11 -0600"
+      "in_water": "2025-08-21 18:28:12 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_beef_from_smoking": {
+  "minecraft:recipes/transportation/oak_boat": {
     "criteria": {
-      "has_beef": "2025-08-18 20:44:11 -0600"
+      "in_water": "2025-08-21 18:28:12 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/item_frame": {
+  "minecraft:recipes/transportation/mangrove_boat": {
     "criteria": {
-      "has_leather": "2025-08-18 20:44:11 -0600"
+      "in_water": "2025-08-21 18:28:12 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_boots": {
+  "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
-      "has_leather": "2025-08-18 20:44:11 -0600"
+      "in_water": "2025-08-21 18:28:12 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_beef": {
+  "minecraft:recipes/transportation/jungle_boat": {
     "criteria": {
-      "has_beef": "2025-08-18 20:44:11 -0600"
+      "in_water": "2025-08-21 18:28:12 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
+  "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
-      "has_beef": "2025-08-18 20:44:11 -0600"
+      "in_water": "2025-08-21 18:28:12 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-21 18:56:12 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2025-08-21 18:56:14 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2025-08-21 18:56:14 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2025-08-21 18:56:14 -0600"
     },
     "done": true
   },

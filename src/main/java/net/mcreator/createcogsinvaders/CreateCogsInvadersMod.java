@@ -17,10 +17,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModTabs;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModSounds;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModMobEffects;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModItems;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModEntities;
+import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModEnchantments;
+import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -42,9 +45,12 @@ public class CreateCogsInvadersMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		CreateCogsInvadersModSounds.REGISTRY.register(bus);
+		CreateCogsInvadersModBlocks.REGISTRY.register(bus);
 
 		CreateCogsInvadersModItems.REGISTRY.register(bus);
 		CreateCogsInvadersModEntities.REGISTRY.register(bus);
+		CreateCogsInvadersModEnchantments.REGISTRY.register(bus);
+		CreateCogsInvadersModTabs.REGISTRY.register(bus);
 
 		CreateCogsInvadersModMobEffects.REGISTRY.register(bus);
 
