@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tesla_shield_blocking"
+      },
+      "name": "default"
+    }
+  }
+}

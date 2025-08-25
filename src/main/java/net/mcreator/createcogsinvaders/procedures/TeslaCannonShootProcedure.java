@@ -1,5 +1,7 @@
 package net.mcreator.createcogsinvaders.procedures;
 
+import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModEnchantments;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.LevelAccessor;
@@ -23,52 +25,88 @@ import net.mcreator.createcogsinvaders.CreateCogsInvadersMod;
 
 public class TeslaCannonShootProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
+		if (world instanceof Level lvl && lvl.isClientSide){
 			return;
-		if (!world.isClientSide()) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreateCogsInvadersModItems.TESLA_CANNON.get()) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() < 50) {
-					{
-						Entity _shootFrom = entity;
-						Level projectileLevel = _shootFrom.level();
-						if (!projectileLevel.isClientSide()) {
-							Projectile _entityToSpawn = new Object() {
-								public Projectile getArrow(Level level, float damage, int knockback) {
-									AbstractArrow entityToSpawn = new ElectroshockChargeEntity(CreateCogsInvadersModEntities.ELECTROSHOCK_CHARGE.get(), level);
-									entityToSpawn.setBaseDamage(damage);
-									entityToSpawn.setKnockback(knockback);
-									entityToSpawn.setSilent(true);
-									return entityToSpawn;
+		}
+		if (entity == null) return;
+		if (!(entity instanceof LivingEntity liv)) return;
+
+		ItemStack main = liv.getMainHandItem();
+		if (main.getItem() != CreateCogsInvadersModItems.TESLA_CANNON.get()) return;
+
+		int energy = TeslaCannonItem.getEnergy(main);
+
+		if (energy > 0) {
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level();
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new ElectroshockChargeEntity(
+									CreateCogsInvadersModEntities.ELECTROSHOCK_CHARGE.get(), level);
+							entityToSpawn.setOwner(_shootFrom);
+
+							boolean hasLimitBreack = false;
+							if (_shootFrom instanceof LivingEntity shooter) {
+								ItemStack heldStack = shooter.getMainHandItem();
+								if (heldStack.is(CreateCogsInvadersModItems.TESLA_CANNON.get())) {
+									hasLimitBreack = EnchantmentHelper.getItemEnchantmentLevel(
+											CreateCogsInvadersModEnchantments.LIMIT_BREACK.get(), heldStack) > 0;
 								}
-							}.getArrow(projectileLevel, (float) 0.1, 0);
-							_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) 2.5, 0);
-							projectileLevel.addFreshEntity(_entityToSpawn);
+							}
+							entityToSpawn.getPersistentData().putBoolean("LimitBreack", hasLimitBreack);
+							entityToSpawn.setOwner(_shootFrom);
+							entityToSpawn.setBaseDamage(0.1D);
+							entityToSpawn.setKnockback(0);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
 						}
-					}
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("create_cogs_invaders:electroshock_throw")), SoundSource.PLAYERS, (float) 0.9, 1);
-						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("create_cogs_invaders:electroshock_throw")), SoundSource.PLAYERS, (float) 0.9, 1, false);
-						}
-					}
-					{
-						ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-						if (_ist.hurt(1, RandomSource.create(), null)) {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
-						}
-					}
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 15);
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof TeslaCannonItem)
-						(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("geckoAnim", "On");
-					CreateCogsInvadersMod.queueServerWork(5, () -> {
-						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof TeslaCannonItem)
-							(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putString("geckoAnim", "empty");
-					});
+					}.getArrow(projectileLevel, 0.1f, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2.5f, 0.0f);
+					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
+			}
+
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				_level.playSound(null, BlockPos.containing(x,y,z),
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("create_cogs_invaders:electroshock_throw")),
+						SoundSource.PLAYERS, 0.7f, 1.0f);
+			}
+
+			if (main.getItem() instanceof TeslaCannonItem)
+				main.getOrCreateTag().putString("geckoAnim", "On");
+			CreateCogsInvadersMod.queueServerWork(5, () -> {
+				if (main.getItem() instanceof TeslaCannonItem)
+					main.getOrCreateTag().putString("geckoAnim", "empty");
+			});
+
+			TeslaCannonItem.setEnergy(main, energy - 1);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(main.getItem(), 15);
+
+			if (main.hurt(1, RandomSource.create(), null)) {
+				main.shrink(1);
+				main.setDamageValue(0);
+			}
+			return;
+		}
+
+		ItemStack off = liv.getOffhandItem();
+		boolean tieneBateria = off.is(CreateCogsInvadersModItems.TESLA_BATTERY_AMMO.get());
+		if (tieneBateria) {
+			TeslaCannonItem.setEnergy(main, TeslaCannonItem.MAX_ENERGY);
+
+			if (entity instanceof Player _plr && !_plr.getAbilities().instabuild) {
+				off.shrink(1);
+				_plr.getCooldowns().addCooldown(main.getItem(), 20);
+			}
+
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				_level.playSound(null, BlockPos.containing(x,y,z),
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("create_cogs_invaders:bolt_release")),
+						SoundSource.PLAYERS, 1.5f, 1.0f);
 			}
 		}
 	}

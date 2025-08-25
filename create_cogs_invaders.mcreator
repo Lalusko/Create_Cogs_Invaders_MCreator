@@ -44,7 +44,7 @@
       "name": "ElectroshockChargeEffectApply",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "electroshock_charge_effect_apply",
       "metadata": {
         "files": [
@@ -146,7 +146,7 @@
       "name": "TeslaCannon",
       "type": "animateditem",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "tesla_cannon",
       "metadata": {
         "files": [
@@ -162,7 +162,7 @@
       "name": "TeslaCannonShoot",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "tesla_cannon_shoot",
       "metadata": {
         "files": [
@@ -612,7 +612,7 @@
       "name": "RepairKit",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "repair_kit",
       "metadata": {
         "files": [
@@ -621,6 +621,109 @@
         ]
       },
       "path": "~/Equip"
+    },
+    {
+      "name": "RepairKitProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repair_kit_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/RepairKitProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "Restoration",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restoration",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/enchantment/RestorationEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "TeslaShield",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_shield",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/tesla_shield.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/TeslaShieldItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/tesla_shield_0.json"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "TeslaShieldProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tesla_shield_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/TeslaShieldProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "LimitBreack",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_breack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/enchantment/LimitBreackEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [],
@@ -747,10 +850,12 @@
       "subtitles.station_use": "Station Use",
       "subtitles.electroshock_throw": "Electroshock Charge Shoot",
       "item_group.create_cogs_invaders.create_cogs_invaders": "Create Cogs Invaders",
+      "tooltip.create_cogs_invaders.tesla_cannon.energy": "Energy: %1$s/%2$s",
       "subtitles.tank_tracks": "Heavy Cog Tracks",
       "item.create_cogs_invaders.advanced_mechanism": "Advanced Mechanism",
       "subtitles.station_reload": "Station Reload",
       "item.create_cogs_invaders.raw_sulfur": "Raw Sulfur",
+      "enchantment.create_cogs_invaders.limit_breack": "Limit Breack",
       "block.create_cogs_invaders.explorer_head": "Explorer Head",
       "subtitles.electroshock_effect": "Electroshock",
       "subtitles.the_story_unfolds": "The Story Unfolds",
@@ -769,6 +874,7 @@
       "subtitles.pellet_shoot": "Pellet Shoot",
       "item.create_cogs_invaders.brass_glass_bottle": "Brass Glass Bottle",
       "item.create_cogs_invaders.electroconductive_chip": "Electroconductive Chip",
+      "enchantment.create_cogs_invaders.restoration": "Restoration",
       "enchantment.create_cogs_invaders.healing_boost": "Healing Boost",
       "subtitles.heavy_cog_death": "Heavy Cog Death",
       "item.create_cogs_invaders.dynamic_mechanism": "Dynamic Mechanism",
@@ -780,6 +886,7 @@
       "item.create_cogs_invaders.dial_repair": "Dial Repair",
       "subtitles.cog_death": "Cog Death",
       "item.create_cogs_invaders.electroshock_charge_icon": "Electroshock Charge Icon",
+      "item.create_cogs_invaders.tesla_shield": "Tesla Shield",
       "item.create_cogs_invaders.incomplete_dynamic_mechanism": "Incomplete Dynamic Mechanism",
       "item.create_cogs_invaders.xp_container": "Xp Container"
     }

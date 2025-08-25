@@ -3,6 +3,7 @@ package net.mcreator.createcogsinvaders.item;
 
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModEnchantments;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -13,14 +14,11 @@ import net.minecraft.world.InteractionHand;
 
 import net.mcreator.createcogsinvaders.procedures.MedkitCureProcedure;
 
+import java.util.Map;
+
 public class MedkitItem extends Item {
 	public MedkitItem() {
 		super(new Item.Properties().durability(5).rarity(Rarity.COMMON));
-	}
-
-	@Override
-	public int getEnchantmentValue() {
-		return 10;
 	}
 
 	@Override
@@ -36,7 +34,18 @@ public class MedkitItem extends Item {
 	}
 
 	@Override
-	public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
-		return enchantment == CreateCogsInvadersModEnchantments.HEALING_BOOST.get();
+	public int getEnchantmentValue() {
+		return 1;
+	}
+
+	@Override
+	public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment ench) {
+		return ench == CreateCogsInvadersModEnchantments.HEALING_BOOST.get();
+	}
+
+	@Override
+	public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
+		Map<Enchantment, Integer> map = EnchantmentHelper.getEnchantments(book);
+		return map.size() == 1 && map.containsKey(CreateCogsInvadersModEnchantments.HEALING_BOOST.get());
 	}
 }

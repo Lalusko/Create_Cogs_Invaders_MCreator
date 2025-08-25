@@ -34,5 +34,6 @@ public class CreateCogsInvadersModTabs {
 				tabData.accept(CreateCogsInvadersModItems.XP_CONTAINER.get());
 				tabData.accept(CreateCogsInvadersModItems.MEDKIT.get());
 				tabData.accept(CreateCogsInvadersModItems.REPAIR_KIT.get());
+				tabData.accept(CreateCogsInvadersModItems.TESLA_SHIELD.get());
 			}).build());
 }

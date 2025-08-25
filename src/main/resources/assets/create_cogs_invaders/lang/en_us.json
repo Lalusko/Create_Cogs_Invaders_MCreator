@@ -4,10 +4,12 @@
   "subtitles.station_use": "Station Use",
   "subtitles.electroshock_throw": "Electroshock Charge Shoot",
   "item_group.create_cogs_invaders.create_cogs_invaders": "Create Cogs Invaders",
+  "tooltip.create_cogs_invaders.tesla_cannon.energy": "Energy: %1$s/%2$s",
   "subtitles.tank_tracks": "Heavy Cog Tracks",
   "item.create_cogs_invaders.advanced_mechanism": "Advanced Mechanism",
   "subtitles.station_reload": "Station Reload",
   "item.create_cogs_invaders.raw_sulfur": "Raw Sulfur",
+  "enchantment.create_cogs_invaders.limit_breack": "Limit Breack",
   "block.create_cogs_invaders.explorer_head": "Explorer Head",
   "subtitles.electroshock_effect": "Electroshock",
   "subtitles.the_story_unfolds": "The Story Unfolds",
@@ -26,6 +28,7 @@
   "subtitles.pellet_shoot": "Pellet Shoot",
   "item.create_cogs_invaders.brass_glass_bottle": "Brass Glass Bottle",
   "item.create_cogs_invaders.electroconductive_chip": "Electroconductive Chip",
+  "enchantment.create_cogs_invaders.restoration": "Restoration",
   "enchantment.create_cogs_invaders.healing_boost": "Healing Boost",
   "subtitles.heavy_cog_death": "Heavy Cog Death",
   "item.create_cogs_invaders.dynamic_mechanism": "Dynamic Mechanism",
@@ -37,6 +40,7 @@
   "item.create_cogs_invaders.dial_repair": "Dial Repair",
   "subtitles.cog_death": "Cog Death",
   "item.create_cogs_invaders.electroshock_charge_icon": "Electroshock Charge Icon",
+  "item.create_cogs_invaders.tesla_shield": "Tesla Shield",
   "item.create_cogs_invaders.incomplete_dynamic_mechanism": "Incomplete Dynamic Mechanism",
   "item.create_cogs_invaders.xp_container": "Xp Container"
 }

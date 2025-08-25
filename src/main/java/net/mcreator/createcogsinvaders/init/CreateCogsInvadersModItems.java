@@ -7,12 +7,20 @@ package net.mcreator.createcogsinvaders.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.createcogsinvaders.item.XpContainerItem;
+import net.mcreator.createcogsinvaders.item.TeslaShieldItem;
 import net.mcreator.createcogsinvaders.item.TeslaCannonItem;
 import net.mcreator.createcogsinvaders.item.TeslaBatteryAmmoItem;
 import net.mcreator.createcogsinvaders.item.RepairKitItem;
@@ -36,6 +44,7 @@ import net.mcreator.createcogsinvaders.item.AdvancedMechanismItem;
 import net.mcreator.createcogsinvaders.item.AdvancedChipItem;
 import net.mcreator.createcogsinvaders.CreateCogsInvadersMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CreateCogsInvadersModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, CreateCogsInvadersMod.MODID);
 	public static final RegistryObject<Item> ELECTROSHOCK_CHARGE_ICON = REGISTRY.register("electroshock_charge_icon", () -> new ElectroshockChargeIconItem());
@@ -61,10 +70,18 @@ public class CreateCogsInvadersModItems {
 	public static final RegistryObject<Item> XP_CONTAINER = REGISTRY.register("xp_container", () -> new XpContainerItem());
 	public static final RegistryObject<Item> MEDKIT = REGISTRY.register("medkit", () -> new MedkitItem());
 	public static final RegistryObject<Item> REPAIR_KIT = REGISTRY.register("repair_kit", () -> new RepairKitItem());
+	public static final RegistryObject<Item> TESLA_SHIELD = REGISTRY.register("tesla_shield", () -> new TeslaShieldItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
+
+	@SubscribeEvent
+	public static void clientLoad(FMLClientSetupEvent event) {
+		event.enqueueWork(() -> {
+			ItemProperties.register(TESLA_SHIELD.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
+		});
 	}
 }
