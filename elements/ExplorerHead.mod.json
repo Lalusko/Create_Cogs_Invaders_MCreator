@@ -42,7 +42,11 @@
     "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CreateCogsInvaders"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""

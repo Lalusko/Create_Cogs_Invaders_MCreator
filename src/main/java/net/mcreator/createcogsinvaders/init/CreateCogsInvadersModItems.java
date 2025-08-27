@@ -40,6 +40,7 @@ import net.mcreator.createcogsinvaders.item.DialItem;
 import net.mcreator.createcogsinvaders.item.DialHealingItem;
 import net.mcreator.createcogsinvaders.item.CopperWireItem;
 import net.mcreator.createcogsinvaders.item.BrassGlassBottleItem;
+import net.mcreator.createcogsinvaders.item.BrassDiscItem;
 import net.mcreator.createcogsinvaders.item.AdvancedMechanismItem;
 import net.mcreator.createcogsinvaders.item.AdvancedChipItem;
 import net.mcreator.createcogsinvaders.CreateCogsInvadersMod;
@@ -71,6 +72,16 @@ public class CreateCogsInvadersModItems {
 	public static final RegistryObject<Item> MEDKIT = REGISTRY.register("medkit", () -> new MedkitItem());
 	public static final RegistryObject<Item> REPAIR_KIT = REGISTRY.register("repair_kit", () -> new RepairKitItem());
 	public static final RegistryObject<Item> TESLA_SHIELD = REGISTRY.register("tesla_shield", () -> new TeslaShieldItem());
+	public static final RegistryObject<Item> MANUFACTURER_HEAD = block(CreateCogsInvadersModBlocks.MANUFACTURER_HEAD);
+	public static final RegistryObject<Item> MINER_HEAD = block(CreateCogsInvadersModBlocks.MINER_HEAD);
+	public static final RegistryObject<Item> ARMOR_REPAIR_STATION = block(CreateCogsInvadersModBlocks.ARMOR_REPAIR_STATION);
+	public static final RegistryObject<Item> HEALING_STATION = block(CreateCogsInvadersModBlocks.HEALING_STATION);
+	public static final RegistryObject<Item> RAW_SULFUR_BLOCK = block(CreateCogsInvadersModBlocks.RAW_SULFUR_BLOCK);
+	public static final RegistryObject<Item> SULFUR_ORE = block(CreateCogsInvadersModBlocks.SULFUR_ORE);
+	public static final RegistryObject<Item> DEEPSLATE_SULFUR_ORE = block(CreateCogsInvadersModBlocks.DEEPSLATE_SULFUR_ORE);
+	public static final RegistryObject<Item> NETHER_MINER_HEAD = block(CreateCogsInvadersModBlocks.NETHER_MINER_HEAD);
+	public static final RegistryObject<Item> CHEMIST_HEAD = block(CreateCogsInvadersModBlocks.CHEMIST_HEAD);
+	public static final RegistryObject<Item> BRASS_DISC = REGISTRY.register("brass_disc", () -> new BrassDiscItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

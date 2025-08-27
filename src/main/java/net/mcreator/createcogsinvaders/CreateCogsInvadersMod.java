@@ -19,6 +19,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModTabs;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModSounds;
+import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModParticleTypes;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModMobEffects;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModItems;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModEntities;
@@ -53,6 +54,8 @@ public class CreateCogsInvadersMod {
 		CreateCogsInvadersModTabs.REGISTRY.register(bus);
 
 		CreateCogsInvadersModMobEffects.REGISTRY.register(bus);
+
+		CreateCogsInvadersModParticleTypes.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

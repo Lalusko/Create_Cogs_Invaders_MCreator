@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cog_chemist_head"
+      },
+      "name": "default"
+    }
+  }
+}

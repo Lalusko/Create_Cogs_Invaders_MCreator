@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "create_cogs_invaders:block/raw_sulfur_block",
+    "up": "create_cogs_invaders:block/raw_sulfur_block",
+    "north": "create_cogs_invaders:block/raw_sulfur_block",
+    "east": "create_cogs_invaders:block/raw_sulfur_block",
+    "south": "create_cogs_invaders:block/raw_sulfur_block",
+    "west": "create_cogs_invaders:block/raw_sulfur_block",
+    "particle": "create_cogs_invaders:block/raw_sulfur_block"
+  },
+  "render_type": "solid"
+}

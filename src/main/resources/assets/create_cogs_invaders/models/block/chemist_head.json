@@ -1,0 +1,9 @@
+{
+  "parent": "create_cogs_invaders:custom/cog_chemist_head",
+  "textures": {
+    "all": "create_cogs_invaders:block/cog_chemist_head",
+    "particle": "create_cogs_invaders:block/cog_chemist_head",
+    "0": "create_cogs_invaders:block/cog_chemist_head"
+  },
+  "render_type": "solid"
+}

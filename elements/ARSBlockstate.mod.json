@@ -1,0 +1,101 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ArmorRepairStation",
+    "blockstateList": [
+      {
+        "texture": "armor_repair_station",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "armor_repair_station_1:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 8.0,
+            "Mx": 14.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "armor_repair_station",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "armor_repair_station_2:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 8.0,
+            "Mx": 14.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "armor_repair_station",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "armor_repair_station_3:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 8.0,
+            "Mx": 14.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "armor_repair_station",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "armor_repair_station_4:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 8.0,
+            "Mx": 14.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "create_cogs_invaders:custom/nether_cog_miner_head",
+  "textures": {
+    "all": "create_cogs_invaders:block/nether_cog_miner_head",
+    "particle": "create_cogs_invaders:block/nether_cog_miner_head",
+    "0": "create_cogs_invaders:block/nether_cog_miner_head"
+  },
+  "render_type": "solid"
+}
