@@ -1176,6 +1176,242 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "RawSulfurBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_sulfur_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/block/RawSulfurBlockBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/models/block/raw_sulfur_block.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/raw_sulfur_block.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/raw_sulfur_block.json",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/raw_sulfur_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SulfurOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/sulfur_ore_biome_modifier.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/worldgen/placed_feature/sulfur_ore.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/worldgen/configured_feature/sulfur_ore.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/SulfurOreBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/sulfur_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SulfurOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sulfur_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/sulfur_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DeepslateSulfurOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_sulfur_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/block/DeepslateSulfurOreBlock.java",
+          "src/main/resources/data/create_cogs_invaders/worldgen/configured_feature/deepslate_sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/deepslate_sulfur_ore.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/deepslate_sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/worldgen/placed_feature/deepslate_sulfur_ore.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/deepslate_sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/deepslate_sulfur_ore_biome_modifier.json",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/deepslate_sulfur_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DeepslateSulfurOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "deepslate_sulfur_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/explorer_head.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NetherMinerHead",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_miner_head",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/nether_miner_head.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/nether_miner_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/nether_miner_head.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/NetherMinerHeadBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/nether_miner_head.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChemistHead",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chemist_head",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/chemist_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/chemist_head.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/ChemistHeadBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/chemist_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/chemist_head.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BrassDisc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brass_disc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/brass_disc.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/BrassDiscItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "XpContainerSetXP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_container_set_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/XpContainerSetXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "HandDrill",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hand_drill",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/hand_drill.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/model/HandDrillItemModel.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/renderer/HandDrillItemRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/HandDrillItem.java"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "HandDrillAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hand_drill_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/HandDrillAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "NetheriteHandDrill",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_hand_drill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/renderer/NetheriteHandDrillItemRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/NetheriteHandDrillItem.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/model/NetheriteHandDrillItemModel.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/netherite_hand_drill.json"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "NetheriteHandDrillAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_hand_drill_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/NetheriteHandDrillAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Equip"
     }
   ],
   "variable_elements": [],
@@ -1295,11 +1531,55 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:DeepslateSulfurOre",
+      "~CUSTOM:SulfurOre",
+      "~CUSTOM:RawSulfurBlock",
       "~CUSTOM:HealingStation",
       "~CUSTOM:ArmorRepairStation"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:BrassDisc"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:DeepslateSulfurOre",
+      "~CUSTOM:SulfurOre",
+      "~CUSTOM:RawSulfurBlock"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:CreateCogsInvaders": [
+      "SulfurOre",
+      "DeepslateSulfurOre",
+      "RawSulfurBlock",
+      "HealingStation",
+      "ArmorRepairStation",
+      "ExplorerHead",
+      "ChemistHead",
+      "MinerHead",
+      "NetherMinerHead",
+      "ManufacturerHead",
+      "Medkit",
+      "RepairKit",
+      "HandDrill",
+      "NetheriteHandDrill",
+      "TeslaCannon",
+      "TeslaShield",
+      "RawSulfur",
+      "PowderedSulfur",
+      "CopperWire",
+      "ElectroconductiveChip",
+      "DynamicChip",
+      "AdvancedChip",
+      "ElectroconductiveMechanism",
+      "DynamicMechanism",
+      "AdvancedMechanism",
+      "BrassGlassBottle",
+      "XpContainer",
+      "TeslaBatteryAmmo",
+      "Dial",
+      "BrassDisc"
+    ]
+  },
   "language_map": {
     "en_us": {
       "item.create_cogs_invaders.tesla_battery_ammo": "Tesla Battery Ammo",
@@ -1308,13 +1588,16 @@
       "subtitles.tank_tracks": "Heavy Cog Tracks",
       "item.create_cogs_invaders.advanced_mechanism": "Advanced Mechanism",
       "subtitles.electroshock_effect": "Electroshock",
+      "block.create_cogs_invaders.chemist_head": "Chemist Head",
       "item.create_cogs_invaders.advanced_chip": "Advanced Chip",
       "item.create_cogs_invaders.incomplete_electroconductive_mechanism": "Incomplete Electroconductive Mechanism",
+      "item.create_cogs_invaders.brass_disc": "Brass Disc",
       "item.create_cogs_invaders.dial": "Dial",
       "block.create_cogs_invaders.miner_head": "Miner Head",
       "subtitles.fwoomp": "Fwoomp",
       "subtitles.pellet_shoot": "Pellet Shoot",
       "item.create_cogs_invaders.brass_glass_bottle": "Brass Glass Bottle",
+      "block.create_cogs_invaders.nether_miner_head": "Nether Miner Head",
       "enchantment.create_cogs_invaders.healing_boost": "Healing Boost",
       "subtitles.heavy_cog_death": "Heavy Cog Death",
       "item.create_cogs_invaders.incomplete_advanced_mechanism": "Incomplete Advanced Mechanism",
@@ -1323,16 +1606,20 @@
       "item.create_cogs_invaders.electroshock_charge_icon": "Electroshock Charge Icon",
       "item.create_cogs_invaders.incomplete_dynamic_mechanism": "Incomplete Dynamic Mechanism",
       "subtitles.ominous_horn": "Military Cog Horn",
+      "item.create_cogs_invaders.hand_drill": "Hand Drill",
       "subtitles.station_use": "Station Use",
       "item_group.create_cogs_invaders.create_cogs_invaders": "Create Cogs Invaders",
+      "block.create_cogs_invaders.raw_sulfur_block": "Raw Sulfur Block",
       "subtitles.station_reload": "Station Reload",
       "item.create_cogs_invaders.raw_sulfur": "Raw Sulfur",
       "enchantment.create_cogs_invaders.limit_breack": "Limit Breack",
+      "block.create_cogs_invaders.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
       "block.create_cogs_invaders.explorer_head": "Explorer Head",
       "subtitles.the_story_unfolds": "The Story Unfolds",
       "subtitles.cog_hurt": "Cog Hurt",
       "effect.create_cogs_invaders.electroshock": "Electroshock",
       "subtitles.station_error": "Station Error",
+      "item.create_cogs_invaders.brass_disc.desc": "Jingle Punks - The Story Unfolds",
       "item.create_cogs_invaders.dynamic_chip": "Dynamic Chip",
       "item.create_cogs_invaders.copper_wire": "Copper Wire",
       "block.create_cogs_invaders.manufacturer_head": "Manufacturer Head",
@@ -1341,6 +1628,7 @@
       "item.create_cogs_invaders.tesla_cannon": "Tesla Cannon",
       "item.create_cogs_invaders.electroconductive_chip": "Electroconductive Chip",
       "enchantment.create_cogs_invaders.restoration": "Restoration",
+      "item.create_cogs_invaders.netherite_hand_drill": "Netherite Hand Drill",
       "item.create_cogs_invaders.dynamic_mechanism": "Dynamic Mechanism",
       "item.create_cogs_invaders.powdered_sulfur": "Powdered Sulfur",
       "block.create_cogs_invaders.armor_repair_station": "Armor Repair Station",
@@ -1349,6 +1637,7 @@
       "subtitles.cog_death": "Cog Death",
       "item.create_cogs_invaders.tesla_shield": "Tesla Shield",
       "block.create_cogs_invaders.healing_station": "Healing Station",
+      "block.create_cogs_invaders.sulfur_ore": "Sulfur Ore",
       "item.create_cogs_invaders.xp_container": "Xp Container"
     }
   },

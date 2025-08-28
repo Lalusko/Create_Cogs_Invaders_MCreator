@@ -42,9 +42,7 @@
         "name": "create_cogs_invaders:jingle-punks-the-story-unfolds",
         "stream": true
       }
-    ],
-    "category": "record",
-    "volume": 0.9
+    ]
   },
   "electroshock_effect": {
     "subtitle": "subtitles.electroshock_effect",

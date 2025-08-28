@@ -1,0 +1,6 @@
+{
+  "parent": "create_cogs_invaders:displaysettings/handdrill",
+  "textures": {
+    "layer0": "create_cogs_invaders:item/andesite_hand_drill"
+  }
+}

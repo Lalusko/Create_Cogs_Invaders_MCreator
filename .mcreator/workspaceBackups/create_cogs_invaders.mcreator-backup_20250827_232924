@@ -1342,6 +1342,76 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "HandDrill",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hand_drill",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/hand_drill.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/model/HandDrillItemModel.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/renderer/HandDrillItemRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/HandDrillItem.java"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "HandDrillAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hand_drill_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/HandDrillAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "NetheriteHandDrill",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_hand_drill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/renderer/NetheriteHandDrillItemRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/NetheriteHandDrillItem.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/model/NetheriteHandDrillItemModel.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/netherite_hand_drill.json"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "NetheriteHandDrillAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_hand_drill_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/NetheriteHandDrillAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Equip"
     }
   ],
   "variable_elements": [],
@@ -1490,6 +1560,8 @@
       "ManufacturerHead",
       "Medkit",
       "RepairKit",
+      "HandDrill",
+      "NetheriteHandDrill",
       "TeslaCannon",
       "TeslaShield",
       "RawSulfur",
@@ -1534,6 +1606,7 @@
       "item.create_cogs_invaders.electroshock_charge_icon": "Electroshock Charge Icon",
       "item.create_cogs_invaders.incomplete_dynamic_mechanism": "Incomplete Dynamic Mechanism",
       "subtitles.ominous_horn": "Military Cog Horn",
+      "item.create_cogs_invaders.hand_drill": "Hand Drill",
       "subtitles.station_use": "Station Use",
       "item_group.create_cogs_invaders.create_cogs_invaders": "Create Cogs Invaders",
       "block.create_cogs_invaders.raw_sulfur_block": "Raw Sulfur Block",
@@ -1555,6 +1628,7 @@
       "item.create_cogs_invaders.tesla_cannon": "Tesla Cannon",
       "item.create_cogs_invaders.electroconductive_chip": "Electroconductive Chip",
       "enchantment.create_cogs_invaders.restoration": "Restoration",
+      "item.create_cogs_invaders.netherite_hand_drill": "Netherite Hand Drill",
       "item.create_cogs_invaders.dynamic_mechanism": "Dynamic Mechanism",
       "item.create_cogs_invaders.powdered_sulfur": "Powdered Sulfur",
       "block.create_cogs_invaders.armor_repair_station": "Armor Repair Station",

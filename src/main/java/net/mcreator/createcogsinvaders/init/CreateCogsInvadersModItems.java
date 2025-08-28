@@ -26,10 +26,12 @@ import net.mcreator.createcogsinvaders.item.TeslaBatteryAmmoItem;
 import net.mcreator.createcogsinvaders.item.RepairKitItem;
 import net.mcreator.createcogsinvaders.item.RawSulfurItem;
 import net.mcreator.createcogsinvaders.item.PowderedSulfurItem;
+import net.mcreator.createcogsinvaders.item.NetheriteHandDrillItem;
 import net.mcreator.createcogsinvaders.item.MedkitItem;
 import net.mcreator.createcogsinvaders.item.IncompleteElectroconductiveMechanismItem;
 import net.mcreator.createcogsinvaders.item.IncompleteDynamicMechanismItem;
 import net.mcreator.createcogsinvaders.item.IncompleteAdvancedMechanismItem;
+import net.mcreator.createcogsinvaders.item.HandDrillItem;
 import net.mcreator.createcogsinvaders.item.ElectroshockChargeIconItem;
 import net.mcreator.createcogsinvaders.item.ElectroconductiveMechanismItem;
 import net.mcreator.createcogsinvaders.item.ElectroconductiveChipItem;
@@ -82,6 +84,8 @@ public class CreateCogsInvadersModItems {
 	public static final RegistryObject<Item> NETHER_MINER_HEAD = block(CreateCogsInvadersModBlocks.NETHER_MINER_HEAD);
 	public static final RegistryObject<Item> CHEMIST_HEAD = block(CreateCogsInvadersModBlocks.CHEMIST_HEAD);
 	public static final RegistryObject<Item> BRASS_DISC = REGISTRY.register("brass_disc", () -> new BrassDiscItem());
+	public static final RegistryObject<Item> HAND_DRILL = REGISTRY.register("hand_drill", () -> new HandDrillItem());
+	public static final RegistryObject<Item> NETHERITE_HAND_DRILL = REGISTRY.register("netherite_hand_drill", () -> new NetheriteHandDrillItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
