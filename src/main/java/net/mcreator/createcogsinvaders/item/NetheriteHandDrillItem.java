@@ -3,7 +3,6 @@ package net.mcreator.createcogsinvaders.item;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import net.mcreator.createcogsinvaders.item.renderer.HandDrillItemRenderer;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.InteractionHand;

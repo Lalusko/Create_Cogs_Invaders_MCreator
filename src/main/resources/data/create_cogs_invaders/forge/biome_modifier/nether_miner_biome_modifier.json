@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "basalt_deltas",
+  "spawners": {
+    "type": "create_cogs_invaders:nether_miner",
+    "weight": 3,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

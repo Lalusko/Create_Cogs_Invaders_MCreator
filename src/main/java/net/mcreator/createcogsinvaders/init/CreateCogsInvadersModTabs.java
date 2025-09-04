@@ -48,5 +48,15 @@ public class CreateCogsInvadersModTabs {
 				tabData.accept(CreateCogsInvadersModItems.TESLA_BATTERY_AMMO.get());
 				tabData.accept(CreateCogsInvadersModItems.DIAL.get());
 				tabData.accept(CreateCogsInvadersModItems.BRASS_DISC.get());
+				tabData.accept(CreateCogsInvadersModItems.EXPLORER_SPAWN_EGG.get());
+				tabData.accept(CreateCogsInvadersModItems.DRONE_EXPLORER_SPAWN_EGG.get());
+				tabData.accept(CreateCogsInvadersModItems.CHEMIST_SPAWN_EGG.get());
+				tabData.accept(CreateCogsInvadersModItems.MINER_SPAWN_EGG.get());
+				tabData.accept(CreateCogsInvadersModItems.NETHER_MINER_SPAWN_EGG.get());
+				tabData.accept(CreateCogsInvadersModItems.MANUFACTURER_SPAWN_EGG.get());
+				tabData.accept(CreateCogsInvadersModItems.SENTRY_PISTOL_SPAWN_EGG.get());
+				tabData.accept(CreateCogsInvadersModItems.SENTRY_WARRIOR_SPAWN_EGG.get());
+				tabData.accept(CreateCogsInvadersModItems.ELITE_PISTOL_SPAWN_EGG.get());
+				tabData.accept(CreateCogsInvadersModItems.ELITE_WARRIOR_SPAWN_EGG.get());
 			}).build());
 }

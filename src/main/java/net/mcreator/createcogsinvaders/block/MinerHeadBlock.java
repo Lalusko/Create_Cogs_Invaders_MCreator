@@ -42,6 +42,16 @@ public class MinerHeadBlock extends Block {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> box(4, 0, 4, 12, 8, 12);
+			case NORTH -> box(4, 0, 4, 12, 8, 12);
+			case EAST -> box(4, 0, 4, 12, 8, 12);
+			case WEST -> box(4, 0, 4, 12, 8, 12);
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
 		builder.add(FACING);

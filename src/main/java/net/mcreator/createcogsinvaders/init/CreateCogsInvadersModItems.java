@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
@@ -86,6 +87,16 @@ public class CreateCogsInvadersModItems {
 	public static final RegistryObject<Item> BRASS_DISC = REGISTRY.register("brass_disc", () -> new BrassDiscItem());
 	public static final RegistryObject<Item> HAND_DRILL = REGISTRY.register("hand_drill", () -> new HandDrillItem());
 	public static final RegistryObject<Item> NETHERITE_HAND_DRILL = REGISTRY.register("netherite_hand_drill", () -> new NetheriteHandDrillItem());
+	public static final RegistryObject<Item> MINER_SPAWN_EGG = REGISTRY.register("miner_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.MINER, -6710887, -9419493, new Item.Properties()));
+	public static final RegistryObject<Item> EXPLORER_SPAWN_EGG = REGISTRY.register("explorer_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.EXPLORER, -2067120, -10066330, new Item.Properties()));
+	public static final RegistryObject<Item> MANUFACTURER_SPAWN_EGG = REGISTRY.register("manufacturer_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.MANUFACTURER, -13210, -10079488, new Item.Properties()));
+	public static final RegistryObject<Item> CHEMIST_SPAWN_EGG = REGISTRY.register("chemist_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.CHEMIST, -2395058, -13429226, new Item.Properties()));
+	public static final RegistryObject<Item> DRONE_EXPLORER_SPAWN_EGG = REGISTRY.register("drone_explorer_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.DRONE_EXPLORER, -2066864, -10066330, new Item.Properties()));
+	public static final RegistryObject<Item> NETHER_MINER_SPAWN_EGG = REGISTRY.register("nether_miner_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.NETHER_MINER, -13297897, -13261, new Item.Properties()));
+	public static final RegistryObject<Item> SENTRY_PISTOL_SPAWN_EGG = REGISTRY.register("sentry_pistol_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.SENTRY_PISTOL, -15328226, -13210, new Item.Properties()));
+	public static final RegistryObject<Item> SENTRY_WARRIOR_SPAWN_EGG = REGISTRY.register("sentry_warrior_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.SENTRY_WARRIOR, -15328226, -13210, new Item.Properties()));
+	public static final RegistryObject<Item> ELITE_PISTOL_SPAWN_EGG = REGISTRY.register("elite_pistol_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.ELITE_PISTOL, -14870242, -14675952, new Item.Properties()));
+	public static final RegistryObject<Item> ELITE_WARRIOR_SPAWN_EGG = REGISTRY.register("elite_warrior_spawn_egg", () -> new ForgeSpawnEggItem(CreateCogsInvadersModEntities.ELITE_WARRIOR, -14870242, -14807281, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

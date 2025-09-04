@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "create_cogs_invaders:chemist",
+    "create_cogs_invaders:drone_explorer",
+    "create_cogs_invaders:elite_pistol",
+    "create_cogs_invaders:elite_warrior",
+    "create_cogs_invaders:explorer",
+    "create_cogs_invaders:manufacturer",
+    "create_cogs_invaders:miner",
+    "create_cogs_invaders:nether_miner",
+    "create_cogs_invaders:sentry_pistol",
+    "create_cogs_invaders:sentry_warrior"
+  ]
+}
