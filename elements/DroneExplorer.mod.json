@@ -92,7 +92,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": "block.metal_pressureplate.click_on"
+      "value": "entity.bee.loop"
     },
     "hurtSound": {
       "value": "CUSTOM:cog_hurt"
@@ -101,10 +101,13 @@
       "value": "CUSTOM:cog_death"
     },
     "stepSound": {
-      "value": "block.netherite_block.step"
+      "value": ""
     },
     "raidCelebrationSound": {
       "value": ""
+    },
+    "onMobTickUpdate": {
+      "name": "DroneExplorerNether"
     },
     "hasAI": true,
     "aiBase": "(none)",
@@ -159,15 +162,11 @@
     "spawningCondition": {
       "name": "DroneExplorerSpawn"
     },
-    "spawningProbability": 15,
+    "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,
-    "restrictionBiomes": [
-      {
-        "value": "badlands"
-      }
-    ],
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

@@ -3,14 +3,17 @@ package net.mcreator.createcogsinvaders.item;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.util.GeckoLibUtil;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.core.animation.RawAnimation;
@@ -34,6 +37,7 @@ import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.mcreator.createcogsinvaders.procedures.HandDrillAnimationProcedure;
 import net.mcreator.createcogsinvaders.item.renderer.HandDrillItemRenderer;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 import com.google.common.collect.Multimap;
@@ -265,5 +269,23 @@ public class HandDrillItem extends Item implements GeoItem {
 	@Override
 	public boolean canPerformAction(net.minecraft.world.item.ItemStack stack, net.minecraftforge.common.ToolAction action) {
 		return action == net.minecraftforge.common.ToolActions.PICKAXE_DIG;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack p_41421_, @Nullable Level p_41422_, List<Component> p_41423_, TooltipFlag p_41424_) {
+		if (Screen.hasShiftDown()) {
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.hold_shift.shift_down"));
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.space.shift_down"));
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.hand_drill.shift_down_0"));
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.hand_drill.shift_down_1"));
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.hand_drill.shift_down_2"));
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.space.shift_down"));
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.shift_breack_block.shift_down"));
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.hand_drill.shift_down_3"));
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.hand_drill.shift_down_4"));
+		} else {
+			p_41423_.add(Component.translatable("tooltip.create_cogs_invaders.hold_shift"));
+		}
+		super.appendHoverText(p_41421_, p_41422_, p_41423_, p_41424_);
 	}
 }

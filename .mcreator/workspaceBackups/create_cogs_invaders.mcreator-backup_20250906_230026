@@ -1,0 +1,2496 @@
+{
+  "mod_elements": [
+    {
+      "name": "ElectroshockCharge",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "electroshock_charge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/ElectroshockChargeEntity.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "ElectroshockChargeIcon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "electroshock_charge_icon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/ElectroshockChargeIconItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/electroshock_charge_icon.json"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "Electroshock",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroshock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/potion/ElectroshockMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "ElectroshockChargeEffectApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "electroshock_charge_effect_apply",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/ElectroshockChargeEffectApplyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "ElectroshockStarted",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroshock_started",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/ElectroshockStartedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "ElectroshockScreenProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroshock_screen_procedure",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/ElectroshockScreenProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "ElectroshockScreen",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroshock_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/screens/ElectroshockScreenOverlay.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "TeslaCannon",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tesla_cannon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/renderer/TeslaCannonItemRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/model/TeslaCannonItemModel.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/TeslaCannonItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/tesla_cannon.json"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "TeslaCannonShoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tesla_cannon_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/TeslaCannonShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "ExplorerHead",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "explorer_head",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/blockstates/explorer_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/explorer_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/explorer_head.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/ExplorerHeadBlock.java",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/explorer_head.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CreateCogsInvaders",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "create_cogs_invaders",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "AdvancedChip",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_chip",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/advanced_chip.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/AdvancedChipItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AdvancedMechanism",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_mechanism",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/AdvancedMechanismItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/advanced_mechanism.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TeslaBatteryAmmo",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_battery_ammo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/TeslaBatteryAmmoItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/tesla_battery_ammo.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "BrassGlassBottle",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brass_glass_bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/brass_glass_bottle.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/BrassGlassBottleItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CopperWire",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_wire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/CopperWireItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/copper_wire.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Dial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/DialItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/dial.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DialHealing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dial_healing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/DialHealingItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/dial_healing.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DialRepair",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dial_repair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/DialRepairItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/dial_repair.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DynamicChip",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamic_chip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/DynamicChipItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/dynamic_chip.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DynamicMechanism",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamic_mechanism",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/DynamicMechanismItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/dynamic_mechanism.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ElectroconductiveChip",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroconductive_chip",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/electroconductive_chip.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/ElectroconductiveChipItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ElectroconductiveMechanism",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electroconductive_mechanism",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/electroconductive_mechanism.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/ElectroconductiveMechanismItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "IncompleteAdvancedMechanism",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incomplete_advanced_mechanism",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/incomplete_advanced_mechanism.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/IncompleteAdvancedMechanismItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "IncompleteDynamicMechanism",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incomplete_dynamic_mechanism",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/incomplete_dynamic_mechanism.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/IncompleteDynamicMechanismItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "IncompleteElectroconductiveMechanism",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incomplete_electroconductive_mechanism",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/incomplete_electroconductive_mechanism.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/IncompleteElectroconductiveMechanismItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PowderedSulfur",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powdered_sulfur",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/powdered_sulfur.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/PowderedSulfurItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RawSulfur",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_sulfur",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/RawSulfurItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/raw_sulfur.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "XpContainer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_container",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/xp_container.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/XpContainerItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DialProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dial_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/DialProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Medkit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "medkit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/MedkitItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/medkit.json"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "MedkitCure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medkit_cure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/MedkitCureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "MedkitOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medkit_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/MedkitOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "HealingBoost",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_boost",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/enchantment/HealingBoostEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "RepairKit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "repair_kit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/RepairKitItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/repair_kit.json"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "RepairKitProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repair_kit_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/RepairKitProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "Restoration",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restoration",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/enchantment/RestorationEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "TeslaShield",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_shield",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/tesla_shield.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/TeslaShieldItem.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/tesla_shield_0.json"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "TeslaShieldProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tesla_shield_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/TeslaShieldProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "LimitBreack",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_breack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/enchantment/LimitBreackEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "ManufacturerHead",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "manufacturer_head",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/manufacturer_head.json",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/manufacturer_head.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/ManufacturerHeadBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/models/block/manufacturer_head.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/manufacturer_head.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MinerHead",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "miner_head",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/miner_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/miner_head.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/MinerHeadBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/miner_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/miner_head.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ArmorRepairStation",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "armor_repair_station",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/blockstates/armor_repair_station.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/armor_repair_station.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/ArmorRepairStationBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/models/block/armor_repair_station.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/armor_repair_station.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "HealingStation",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "healing_station",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/block/HealingStationBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/healing_station.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/healing_station.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/healing_station.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/healing_station.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ARSBlockstate",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ars_blockstate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/block/ars_blockstate_blockstate_1.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/ars_blockstate_blockstate_0.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/ars_blockstate_blockstate_2.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/ars_blockstate_blockstate_3.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "HSBlockstate",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hs_blockstate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/block/hs_blockstate_blockstate_0.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/hs_blockstate_blockstate_1.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/hs_blockstate_blockstate_2.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/hs_blockstate_blockstate_3.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ARSRepair",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ars_repair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/ARSRepairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ARSBlockstates",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ars_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/ARSBlockstatesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Repair",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/particles/repair.json",
+          "src/main/java/net/mcreator/createcogsinvaders/client/particle/RepairParticle.java"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "ARSParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ars_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/ARSParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "HSBlockstates",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hs_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/HSBlockstatesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "HSHealing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hs_healing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/HSHealingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Healing0",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/particle/Healing0Particle.java",
+          "src/main/resources/assets/create_cogs_invaders/particles/healing_0.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "Healing1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/particle/Healing1Particle.java",
+          "src/main/resources/assets/create_cogs_invaders/particles/healing_1.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "Healing2",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/particles/healing_2.json",
+          "src/main/java/net/mcreator/createcogsinvaders/client/particle/Healing2Particle.java"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "Healing3",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/particle/Healing3Particle.java",
+          "src/main/resources/assets/create_cogs_invaders/particles/healing_3.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "Healing4",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/particle/Healing4Particle.java",
+          "src/main/resources/assets/create_cogs_invaders/particles/healing_4.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "Healing5",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/particles/healing_5.json",
+          "src/main/java/net/mcreator/createcogsinvaders/client/particle/Healing5Particle.java"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "Healing6",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/particle/Healing6Particle.java",
+          "src/main/resources/assets/create_cogs_invaders/particles/healing_6.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "Healing7",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/particle/Healing7Particle.java",
+          "src/main/resources/assets/create_cogs_invaders/particles/healing_7.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "HSParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hs_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/HSParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RawSulfurBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_sulfur_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/block/RawSulfurBlockBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/models/block/raw_sulfur_block.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/raw_sulfur_block.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/raw_sulfur_block.json",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/raw_sulfur_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SulfurOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/sulfur_ore_biome_modifier.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/worldgen/placed_feature/sulfur_ore.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/worldgen/configured_feature/sulfur_ore.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/SulfurOreBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/sulfur_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SulfurOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sulfur_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/sulfur_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DeepslateSulfurOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_sulfur_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/block/DeepslateSulfurOreBlock.java",
+          "src/main/resources/data/create_cogs_invaders/worldgen/configured_feature/deepslate_sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/deepslate_sulfur_ore.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/deepslate_sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/worldgen/placed_feature/deepslate_sulfur_ore.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/deepslate_sulfur_ore.json",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/deepslate_sulfur_ore_biome_modifier.json",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/deepslate_sulfur_ore.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DeepslateSulfurOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "deepslate_sulfur_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/explorer_head.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NetherMinerHead",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nether_miner_head",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/nether_miner_head.json",
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/nether_miner_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/nether_miner_head.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/NetherMinerHeadBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/nether_miner_head.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChemistHead",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "chemist_head",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/blocks/chemist_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/chemist_head.json",
+          "src/main/java/net/mcreator/createcogsinvaders/block/ChemistHeadBlock.java",
+          "src/main/resources/assets/create_cogs_invaders/blockstates/chemist_head.json",
+          "src/main/resources/assets/create_cogs_invaders/models/block/chemist_head.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BrassDisc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brass_disc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/brass_disc.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/BrassDiscItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "XpContainerSetXP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_container_set_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/XpContainerSetXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "HandDrill",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hand_drill",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/hand_drill.json",
+          "src/main/java/net/mcreator/createcogsinvaders/item/model/HandDrillItemModel.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/renderer/HandDrillItemRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/HandDrillItem.java"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "HandDrillAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hand_drill_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/HandDrillAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "NetheriteHandDrill",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "netherite_hand_drill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/item/renderer/NetheriteHandDrillItemRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/NetheriteHandDrillItem.java",
+          "src/main/java/net/mcreator/createcogsinvaders/item/model/NetheriteHandDrillItemModel.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/netherite_hand_drill.json"
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "NetheriteHandDrillAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_hand_drill_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/NetheriteHandDrillAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Equip"
+    },
+    {
+      "name": "Miner",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "miner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/MinerRenderer.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/miner_spawn_egg.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/MinerEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/MinerModel.java",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/miner_biome_modifier.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/MinerLayer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Explorer",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "explorer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/ExplorerRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/ExplorerModel.java",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/explorer_biome_modifier.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/explorer_spawn_egg.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/ExplorerEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/ExplorerLayer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Manufacturer",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "manufacturer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/manufacturer_spawn_egg.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/ManufacturerEntity.java",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/manufacturer_biome_modifier.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/ManufacturerModel.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/ManufacturerLayer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/ManufacturerRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Chemist",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "chemist",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/ChemistLayer.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/chemist_spawn_egg.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/ChemistModel.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/ChemistEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/ChemistRenderer.java",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/chemist_biome_modifier.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DroneExplorer",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drone_explorer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/DroneExplorerRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/DroneExplorerEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/DroneExplorerModel.java",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/drone_explorer_biome_modifier.json",
+          "src/main/resources/assets/create_cogs_invaders/models/item/drone_explorer_spawn_egg.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/DroneExplorerLayer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "NetherMiner",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nether_miner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/NetherMinerEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/NetherMinerLayer.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/nether_miner_spawn_egg.json",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/nether_miner_biome_modifier.json",
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/NetherMinerRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/NetherMinerModel.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SentryPistol",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sentry_pistol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/SentryPistolEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/SentryPistolRenderer.java",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/sentry_pistol_biome_modifier.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/SentryPistolModel.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/SentryPistolLayer.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/sentry_pistol_spawn_egg.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "BrassPellet",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brass_pellet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/BrassPelletEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/BrassPelletRenderer.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "SentryWarrior",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sentry_warrior",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/SentryWarriorModel.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/sentry_warrior_spawn_egg.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/SentryWarriorLayer.java",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/sentry_warrior_biome_modifier.json",
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/SentryWarriorRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/SentryWarriorEntity.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ElitePistol",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elite_pistol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/ElitePistolRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/ElitePistolLayer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/ElitePistolEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/ElitePistolModel.java",
+          "src/main/resources/assets/create_cogs_invaders/models/item/elite_pistol_spawn_egg.json",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/elite_pistol_biome_modifier.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "EliteWarrior",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elite_warrior",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_cogs_invaders/models/item/elite_warrior_spawn_egg.json",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/model/EliteWarriorModel.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/EliteWarriorEntity.java",
+          "src/main/resources/data/create_cogs_invaders/forge/biome_modifier/elite_warrior_biome_modifier.json",
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/EliteWarriorRenderer.java",
+          "src/main/java/net/mcreator/createcogsinvaders/entity/layer/EliteWarriorLayer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "FireBall",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fire_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/FireBallEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/FireBallRenderer.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "FireBallExplode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ball_explode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/FireBallExplodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "BrassPelletWitherEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brass_pellet_wither_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/BrassPelletWitherEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "BrassPelletWither",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brass_pellet_wither",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/entity/BrassPelletWitherEntity.java",
+          "src/main/java/net/mcreator/createcogsinvaders/client/renderer/BrassPelletWitherRenderer.java"
+        ]
+      },
+      "path": "~/Projectiles"
+    },
+    {
+      "name": "SentryWarriorElectroshock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sentry_warrior_electroshock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/SentryWarriorElectroshockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "EliteWarriorElectroshock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elite_warrior_electroshock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/EliteWarriorElectroshockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DroneExplorerLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "drone_explorer_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/drone_explorer.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ElitePistolLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elite_pistol_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/elite_pistol.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "EliteWarriorLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elite_warrior_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/elite_warrior.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ExplorerLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "explorer_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/explorer.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ManufacturerLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "manufacturer_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/manufacturer.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "MinerLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "miner_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/miner.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "NetherMinerLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nether_miner_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/nether_miner.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SentryPistolLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sentry_pistol_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/sentry_pistol.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SentryWarriorLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sentry_warrior_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/sentry_warrior.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "MinerSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "miner_spawn",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/MinerSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DroneExplorerSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drone_explorer_spawn",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/DroneExplorerSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "MinerShieldBreak",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "miner_shield_break",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/MinerShieldBreakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DoNotBetray",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "do_not_betray",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/DoNotBetrayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ChemistLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "chemist_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/loot_tables/entities/chemist.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "MinerElectroshock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_electroshock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/MinerElectroshockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ManufacturerRegeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "manufacturer_regeneration",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/ManufacturerRegenerationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DroneExplorerNether",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drone_explorer_nether",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createcogsinvaders/procedures/DroneExplorerNetherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "AdvancedChipCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_chip_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/recipes/advanced_chip_crafting.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AdvancedMechanismSequencedAssembly",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "advanced_mechanism_sequenced_assembly",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/recipes/advanced_mechanism_sequenced_assembly.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TeslaBatteryAmmoCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tesla_battery_ammo_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/recipes/tesla_battery_ammo_crafting.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ArmorRepairStationMechanicalCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_repair_station_mechanical_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_cogs_invaders/recipes/armor_repair_station_mechanical_crafting.json"
+        ]
+      },
+      "path": "~/Recipes"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "bolt_release",
+      "files": [
+        "bolt_release"
+      ],
+      "category": "player",
+      "subtitle": "Battery Reload"
+    },
+    {
+      "name": "pellet_shoot",
+      "files": [
+        "fire"
+      ],
+      "category": "hostile",
+      "subtitle": "Pellet Shoot"
+    },
+    {
+      "name": "fwoomp",
+      "files": [
+        "fwoomp"
+      ],
+      "category": "hostile",
+      "subtitle": "Fwoomp"
+    },
+    {
+      "name": "heavy_cog_death",
+      "files": [
+        "dispenser_destroy"
+      ],
+      "category": "hostile",
+      "subtitle": "Heavy Cog Death"
+    },
+    {
+      "name": "the_story_unfolds",
+      "files": [
+        "jingle-punks-the-story-unfolds"
+      ],
+      "category": "music",
+      "subtitle": "The Story Unfolds"
+    },
+    {
+      "name": "electroshock_effect",
+      "files": [
+        "electroshock_effect"
+      ],
+      "category": "hostile",
+      "subtitle": "Electroshock"
+    },
+    {
+      "name": "ominous_horn",
+      "files": [
+        "ominous_horn"
+      ],
+      "category": "hostile",
+      "subtitle": "Military Cog Horn"
+    },
+    {
+      "name": "cog_death",
+      "files": [
+        "robot_death"
+      ],
+      "category": "hostile",
+      "subtitle": "Cog Death"
+    },
+    {
+      "name": "cog_hurt",
+      "files": [
+        "robot_hurt"
+      ],
+      "category": "hostile",
+      "subtitle": "Cog Hurt"
+    },
+    {
+      "name": "electroshock_throw",
+      "files": [
+        "electroshock_throw"
+      ],
+      "category": "hostile",
+      "subtitle": "Electroshock Charge Shoot"
+    },
+    {
+      "name": "station_error",
+      "files": [
+        "station_error"
+      ],
+      "category": "block",
+      "subtitle": "Station Error"
+    },
+    {
+      "name": "station_reload",
+      "files": [
+        "station_reload"
+      ],
+      "category": "block",
+      "subtitle": "Station Reload"
+    },
+    {
+      "name": "station_use",
+      "files": [
+        "station_use"
+      ],
+      "category": "block",
+      "subtitle": "Station Use"
+    },
+    {
+      "name": "tank_tracks",
+      "files": [
+        "tank_tacks_1"
+      ],
+      "category": "hostile",
+      "subtitle": "Heavy Cog Tracks"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:DeepslateSulfurOre",
+      "~CUSTOM:SulfurOre",
+      "~CUSTOM:RawSulfurBlock",
+      "~CUSTOM:HealingStation",
+      "~CUSTOM:ArmorRepairStation"
+    ],
+    "ITEMS:mod:tesla_shield": [
+      "CUSTOM:TeslaShield"
+    ],
+    "ENTITIES:mod:cogs": [
+      "CUSTOM:Chemist",
+      "CUSTOM:DroneExplorer",
+      "CUSTOM:ElitePistol",
+      "CUSTOM:EliteWarrior",
+      "CUSTOM:Explorer",
+      "CUSTOM:Manufacturer",
+      "CUSTOM:Miner",
+      "CUSTOM:NetherMiner",
+      "CUSTOM:SentryPistol",
+      "CUSTOM:SentryWarrior"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:BrassDisc"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:DeepslateSulfurOre",
+      "~CUSTOM:SulfurOre",
+      "~CUSTOM:RawSulfurBlock"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:CreateCogsInvaders": [
+      "SulfurOre",
+      "DeepslateSulfurOre",
+      "RawSulfurBlock",
+      "HealingStation",
+      "ArmorRepairStation",
+      "ExplorerHead",
+      "ChemistHead",
+      "MinerHead",
+      "NetherMinerHead",
+      "ManufacturerHead",
+      "Medkit",
+      "RepairKit",
+      "HandDrill",
+      "NetheriteHandDrill",
+      "TeslaCannon",
+      "TeslaShield",
+      "RawSulfur",
+      "PowderedSulfur",
+      "CopperWire",
+      "ElectroconductiveChip",
+      "DynamicChip",
+      "AdvancedChip",
+      "ElectroconductiveMechanism",
+      "DynamicMechanism",
+      "AdvancedMechanism",
+      "BrassGlassBottle",
+      "XpContainer",
+      "TeslaBatteryAmmo",
+      "Dial",
+      "BrassDisc",
+      "Explorer",
+      "DroneExplorer",
+      "Chemist",
+      "Miner",
+      "NetherMiner",
+      "Manufacturer",
+      "SentryPistol",
+      "SentryWarrior",
+      "ElitePistol",
+      "EliteWarrior"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.create_cogs_invaders.tesla_battery_ammo": "Tesla Battery Ammo",
+      "subtitles.electroshock_throw": "Electroshock Charge Shoot",
+      "subtitles.tank_tracks": "Heavy Cog Tracks",
+      "item.create_cogs_invaders.advanced_mechanism": "Advanced Mechanism",
+      "tooltip.create_cogs_invaders.armor_repair_station.shift_down_0": "§eThe Armor Repair Station §6uses§e full XP Containers§6 as a",
+      "tooltip.create_cogs_invaders.armor_repair_station.shift_down_7": "§7Right-click on the block while holding a full XP Container",
+      "subtitles.electroshock_effect": "Electroshock",
+      "tooltip.create_cogs_invaders.armor_repair_station.shift_down_8": " §6Refills the§e Armor Repair Station",
+      "tooltip.create_cogs_invaders.right_click_block.shift_down": "§7Right-click on the block",
+      "tooltip.create_cogs_invaders.armor_repair_station.shift_down_5": "§7Right-click on the block while holding a Repair Kit",
+      "tooltip.create_cogs_invaders.armor_repair_station.shift_down_6": " §6Can also refill the§e Repair Kit",
+      "tooltip.create_cogs_invaders.armor_repair_station.shift_down_3": " §6Fully repairs any damaged armor piece as long as it is",
+      "tooltip.create_cogs_invaders.armor_repair_station.shift_down_4": " §6equipped",
+      "tooltip.create_cogs_invaders.armor_repair_station.shift_down_1": "§6power source, can be refilled with a maximum of 4 full",
+      "block.create_cogs_invaders.chemist_head": "Chemist Head",
+      "tooltip.create_cogs_invaders.armor_repair_station.shift_down_2": "§6XP Containers, and consumes 1 per use.",
+      "item.create_cogs_invaders.incomplete_electroconductive_mechanism": "Incomplete Electroconductive Mechanism",
+      "entity.create_cogs_invaders.elite_warrior": "Elite Warrior",
+      "item.create_cogs_invaders.dial": "Dial",
+      "block.create_cogs_invaders.miner_head": "Miner Head",
+      "subtitles.fwoomp": "Fwoomp",
+      "item.create_cogs_invaders.brass_glass_bottle": "Brass Glass Bottle",
+      "item.create_cogs_invaders.dial_repair": "Dial Repair",
+      "tooltip.create_cogs_invaders.reload.shift_down": "§7Reload",
+      "item.create_cogs_invaders.incomplete_dynamic_mechanism": "Incomplete Dynamic Mechanism",
+      "item.create_cogs_invaders.hand_drill": "Hand Drill",
+      "subtitles.station_use": "Station Use",
+      "entity.create_cogs_invaders.sentry_warrior": "Sentry Warrior",
+      "tooltip.create_cogs_invaders.space.shift_down": "",
+      "enchantment.create_cogs_invaders.limit_breack": "Limit Breack",
+      "item.create_cogs_invaders.sentry_warrior_spawn_egg": "Sentry Warrior Spawn Egg",
+      "item.create_cogs_invaders.elite_warrior_spawn_egg": "Elite Warrior Spawn Egg",
+      "effect.create_cogs_invaders.electroshock": "Electroshock",
+      "subtitles.station_error": "Station Error",
+      "item.create_cogs_invaders.brass_disc.desc": "Jingle Punks - The Story Unfolds",
+      "block.create_cogs_invaders.manufacturer_head": "Manufacturer Head",
+      "entity.create_cogs_invaders.manufacturer": "Manufacturer",
+      "tooltip.create_cogs_invaders.healing_station.shift_down_2": "§7Right-click on the block while holding a Medkit",
+      "tooltip.create_cogs_invaders.healing_station.shift_down_3": " §6Can also refill the§e Medkit",
+      "tooltip.create_cogs_invaders.healing_station.shift_down_0": "§eThe Healing Station §6uses§e full XP Containers§6 as a",
+      "tooltip.create_cogs_invaders.healing_station.shift_down_1": " §6Fully heals the user regardless of their§e Maximum Health",
+      "tooltip.create_cogs_invaders.hand_drill.shift_down_3": " §6Destroys blocks in a 3x3 area",
+      "item.create_cogs_invaders.medkit": "Medkit",
+      "tooltip.create_cogs_invaders.hand_drill.shift_down_2": "§eenchantments.",
+      "item.create_cogs_invaders.electroconductive_chip": "Electroconductive Chip",
+      "tooltip.create_cogs_invaders.hand_drill.shift_down_4": " §e(only affects pickaxe-mineable blocks)",
+      "tooltip.create_cogs_invaders.hand_drill.shift_down_1": "§6but is only compatible with§e general",
+      "tooltip.create_cogs_invaders.hand_drill.shift_down_0": "§6This tool can break almost any block,",
+      "entity.create_cogs_invaders.miner": "Miner",
+      "tooltip.create_cogs_invaders.right_click_sneak.shift_down": "§7Right click while sneaking",
+      "tooltip.create_cogs_invaders.shoot.shift_down": " §6Shoot",
+      "item.create_cogs_invaders.dynamic_mechanism": "Dynamic Mechanism",
+      "item.create_cogs_invaders.chemist_spawn_egg": "Chemist Spawn Egg",
+      "item.create_cogs_invaders.miner_spawn_egg": "Miner Spawn Egg",
+      "item.create_cogs_invaders.nether_miner_spawn_egg": "Nether Miner Spawn Egg",
+      "item.create_cogs_invaders.electroconductive_mechanism": "Electroconductive Mechanism",
+      "subtitles.cog_death": "Cog Death",
+      "tooltip.create_cogs_invaders.right_click_entity.shift_down": "§7Right click on entity",
+      "block.create_cogs_invaders.sulfur_ore": "Sulfur Ore",
+      "tooltip.create_cogs_invaders.tesla_cannon.energy": "Energy: %1$s/%2$s",
+      "entity.create_cogs_invaders.elite_pistol": "Elite Pistol",
+      "item.create_cogs_invaders.manufacturer_spawn_egg": "Manufacturer Spawn Egg",
+      "tooltip.create_cogs_invaders.tesla_cannon.shift_down_3": " §e25 health hearts§6)",
+      "tooltip.create_cogs_invaders.repair_kit.shift_down_1": "§6while holding the§e Repair Kit§6 in",
+      "tooltip.create_cogs_invaders.tesla_cannon.shift_down_2": "§6(§eonly affects enemies with less than",
+      "tooltip.create_cogs_invaders.repair_kit.shift_down_2": "§6one hand and the tool to be repaired",
+      "entity.create_cogs_invaders.nether_miner": "Nether Miner",
+      "tooltip.create_cogs_invaders.tesla_cannon.shift_down_1": "§6that paralyze entities hit by them",
+      "tooltip.create_cogs_invaders.tesla_cannon.shift_down_0": "§6This weapon launches electrical orbs",
+      "tooltip.create_cogs_invaders.repair_kit.shift_down_0": "§6Repair 50 uses of any tool,§e right click",
+      "entity.create_cogs_invaders.explorer": "Explorer",
+      "item.create_cogs_invaders.drone_explorer_spawn_egg": "Drone Explorer Spawn Egg",
+      "tooltip.create_cogs_invaders.tesla_cannon.shift_down_6": " §eTesla Cannon",
+      "tooltip.create_cogs_invaders.repair_kit.shift_down_3": "§6in the other.",
+      "tooltip.create_cogs_invaders.tesla_cannon.shift_down_5": " §6your off-hand to recharge the",
+      "tooltip.create_cogs_invaders.tesla_cannon.shift_down_4": " §6Right click while holding a§e Battery in",
+      "item.create_cogs_invaders.advanced_chip": "Advanced Chip",
+      "item.create_cogs_invaders.brass_disc": "Brass Disc",
+      "tooltip.create_cogs_invaders.healing_station.shift_down_4": " §6Refills the§e Healing Station",
+      "tooltip.create_cogs_invaders.dial.shift_down_3": "§7Right click again",
+      "tooltip.create_cogs_invaders.dial.shift_down_4": " §6Get§e Dial (repair)",
+      "tooltip.create_cogs_invaders.dial.shift_down_1": "§6configure the§e Unconfigured Station",
+      "tooltip.create_cogs_invaders.dial.shift_down_2": " §6Get§e Dial (healing)",
+      "tooltip.create_cogs_invaders.medkit.shift_down_0": "§6Applies§e Instant Heal II§6 to any",
+      "subtitles.pellet_shoot": "Pellet Shoot",
+      "tooltip.create_cogs_invaders.dial.shift_down_0": "§6It is an object that is used to",
+      "block.create_cogs_invaders.nether_miner_head": "Nether Miner Head",
+      "tooltip.create_cogs_invaders.medkit.shift_down_3": " §6Heal the entity",
+      "enchantment.create_cogs_invaders.healing_boost": "Healing Boost",
+      "tooltip.create_cogs_invaders.medkit.shift_down_1": "§6entity including the player",
+      "tooltip.create_cogs_invaders.medkit.shift_down_2": " §6Heals the player",
+      "entity.create_cogs_invaders.chemist": "Chemist",
+      "tooltip.create_cogs_invaders.hold_shift": "§8Hold [§7Shift§8] for Summary",
+      "entity.create_cogs_invaders.sentry_pistol": "Sentry Pistol",
+      "subtitles.heavy_cog_death": "Heavy Cog Death",
+      "item.create_cogs_invaders.incomplete_advanced_mechanism": "Incomplete Advanced Mechanism",
+      "item.create_cogs_invaders.repair_kit": "Repair Kit",
+      "item.create_cogs_invaders.electroshock_charge_icon": "Electroshock Charge Icon",
+      "item.create_cogs_invaders.sentry_pistol_spawn_egg": "Sentry Pistol Spawn Egg",
+      "subtitles.ominous_horn": "Military Cog Horn",
+      "item_group.create_cogs_invaders.create_cogs_invaders": "Create Cogs Invaders",
+      "block.create_cogs_invaders.raw_sulfur_block": "Raw Sulfur Block",
+      "subtitles.station_reload": "Station Reload",
+      "item.create_cogs_invaders.raw_sulfur": "Raw Sulfur",
+      "block.create_cogs_invaders.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
+      "block.create_cogs_invaders.explorer_head": "Explorer Head",
+      "subtitles.the_story_unfolds": "The Story Unfolds",
+      "subtitles.cog_hurt": "Cog Hurt",
+      "tooltip.create_cogs_invaders.shift_breack_block.shift_down": "§7When breaking a block by holding shift",
+      "item.create_cogs_invaders.dynamic_chip": "Dynamic Chip",
+      "item.create_cogs_invaders.copper_wire": "Copper Wire",
+      "tooltip.create_cogs_invaders.tesla_shield.shift_down_0": "§6Gives the§e Electroshock§6 effect to ",
+      "tooltip.create_cogs_invaders.tesla_shield.shift_down_1": "§6melee attackers.",
+      "item.create_cogs_invaders.explorer_spawn_egg": "Explorer Spawn Egg",
+      "subtitles.bolt_release": "Battery Reload",
+      "item.create_cogs_invaders.tesla_cannon": "Tesla Cannon",
+      "enchantment.create_cogs_invaders.restoration": "Restoration",
+      "tooltip.create_cogs_invaders.hold_shift.shift_down": "§8Hold [§fShift§8] for Summary",
+      "item.create_cogs_invaders.netherite_hand_drill": "Netherite Hand Drill",
+      "tooltip.create_cogs_invaders.right_click.shift_down": "§7Right-click",
+      "item.create_cogs_invaders.powdered_sulfur": "Powdered Sulfur",
+      "block.create_cogs_invaders.armor_repair_station": "Armor Repair Station",
+      "tooltip.create_cogs_invaders.cog_head.shift_down": "§6From this§e Head§6 you can get§e The Chip.",
+      "item.create_cogs_invaders.dial_healing": "Dial Healing",
+      "item.create_cogs_invaders.elite_pistol_spawn_egg": "Elite Pistol Spawn Egg",
+      "entity.create_cogs_invaders.drone_explorer": "Drone Explorer",
+      "item.create_cogs_invaders.tesla_shield": "Tesla Shield",
+      "block.create_cogs_invaders.healing_station": "Healing Station",
+      "item.create_cogs_invaders.xp_container": "Xp Container"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Equip",
+        "children": []
+      },
+      {
+        "name": "Projectiles",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Enchantments",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "create_cogs_invaders",
+    "modName": "Create Cogs Invaders",
+    "version": "1.0.6.3",
+    "author": "PC, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "use_compiled_mods",
+      "geckolib",
+      "createnew",
+      "jei"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.createcogsinvaders"
+  },
+  "mcreatorVersion": 202400452410
+}

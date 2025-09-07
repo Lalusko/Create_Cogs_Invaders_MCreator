@@ -9,7 +9,9 @@ public class BrassPelletWitherEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 120, 1));
+		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.isBlocking())) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 120, 1));
+		}
 	}
 }

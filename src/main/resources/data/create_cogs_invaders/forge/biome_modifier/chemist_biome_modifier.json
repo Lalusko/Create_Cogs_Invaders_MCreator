@@ -1,6 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "basalt_deltas",
+  "biomes": "#minecraft:is_nether",
   "spawners": {
     "type": "create_cogs_invaders:chemist",
     "weight": 2,

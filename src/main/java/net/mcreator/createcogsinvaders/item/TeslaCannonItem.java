@@ -4,6 +4,7 @@ package net.mcreator.createcogsinvaders.item;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.nbt.CompoundTag;
@@ -151,6 +152,24 @@ public class TeslaCannonItem extends Item implements GeoItem {
 				Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.energy", e, MAX_ENERGY)
 						.withStyle(ChatFormatting.GRAY)
 		);
+
+		if (Screen.hasShiftDown()) {
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.hold_shift.shift_down"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.space.shift_down"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_0"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_1"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_2"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_3"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.space.shift_down"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.right_click.shift_down"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.shoot.shift_down"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.reload.shift_down"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_4"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_5"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_6"));
+		} else {
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.hold_shift"));
+		}
 		super.appendHoverText(stack, level, tooltip, flag);
 	}
 

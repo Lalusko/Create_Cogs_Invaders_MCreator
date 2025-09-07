@@ -55,6 +55,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.createcogsinvaders.procedures.DroneExplorerSpawnProcedure;
+import net.mcreator.createcogsinvaders.procedures.DroneExplorerNetherProcedure;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModEntities;
 
 import javax.annotation.Nullable;
@@ -234,12 +235,7 @@ public class DroneExplorerEntity extends Monster implements RangedAttackMob, Geo
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.metal_pressure_plate.click_on"));
-	}
-
-	@Override
-	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.netherite_block.step")), 0.15f, 1);
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.bee.loop"));
 	}
 
 	@Override
@@ -280,6 +276,7 @@ public class DroneExplorerEntity extends Monster implements RangedAttackMob, Geo
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		DroneExplorerNetherProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 

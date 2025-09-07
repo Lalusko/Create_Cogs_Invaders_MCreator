@@ -10,7 +10,7 @@ public class DroneExplorerSpawnProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, new ResourceLocation("minecraft:is_overworld"))) && Math.random() <= 0.2) {
 			return true;
-		} else if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, new ResourceLocation("minecraft:is_nether"))) && Math.random() <= 0.05) {
+		} else if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, new ResourceLocation("minecraft:is_nether"))) && Math.random() <= 0.1) {
 			return true;
 		}
 		return false;

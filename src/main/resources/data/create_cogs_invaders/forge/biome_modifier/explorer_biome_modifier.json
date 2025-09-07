@@ -1,6 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "badlands",
+  "biomes": "#minecraft:is_overworld",
   "spawners": {
     "type": "create_cogs_invaders:explorer",
     "weight": 25,

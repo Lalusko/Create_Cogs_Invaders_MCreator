@@ -34,15 +34,12 @@
         "attribute": {
           "value": "ATTACK_DAMAGE"
         },
-        "amount": -0.25,
+        "amount": -0.35000000000000003,
         "operation": "ADD_MULTIPLIED_TOTAL"
       }
     ],
     "onStarted": {
       "name": "ElectroshockStarted"
-    },
-    "onActiveTick": {
-      "name": "ElectroshockActive"
     }
   }
 }

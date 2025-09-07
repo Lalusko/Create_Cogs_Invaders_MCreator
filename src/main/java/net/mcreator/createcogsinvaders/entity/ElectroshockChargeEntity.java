@@ -1,6 +1,8 @@
 
 package net.mcreator.createcogsinvaders.entity;
 
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
@@ -80,9 +82,23 @@ public class ElectroshockChargeEntity extends AbstractArrow implements ItemSuppl
 	}
 
 	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		ElectroshockChargeEffectApplyProcedure.execute(entityHitResult.getEntity());
+	protected void onHitEntity(EntityHitResult hit) {
+		if (hit.getEntity() instanceof LivingEntity le) {
+			ItemStack using = le.getUseItem();
+			boolean blockingShield = le.isBlocking() && using.getItem() instanceof ShieldItem;
+			if (blockingShield) {
+				if (!this.level().isClientSide) {
+					this.level().playSound(null, le.getX(), le.getY(), le.getZ(),
+							SoundEvents.SHIELD_BLOCK, SoundSource.PLAYERS, 1.0F, 1.0F);
+				}
+				this.discard();
+				return;
+			}
+		}
+
+		super.onHitEntity(hit);
+		ElectroshockChargeEffectApplyProcedure.execute(hit.getEntity());
+		this.discard();
 	}
 
 	@Override
@@ -107,11 +123,11 @@ public class ElectroshockChargeEntity extends AbstractArrow implements ItemSuppl
 	}
 
 	public static ElectroshockChargeEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 2.5f, 0.1, 0);
+		return shoot(world, entity, source, 1.8f, 0.1, 0);
 	}
 
 	public static ElectroshockChargeEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
-		return shoot(world, entity, source, pullingPower * 2.5f, 0.1, 0);
+		return shoot(world, entity, source, pullingPower * 1.8f, 0.1, 0);
 	}
 
 	public static ElectroshockChargeEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -132,7 +148,7 @@ public class ElectroshockChargeEntity extends AbstractArrow implements ItemSuppl
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2.5f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY(), dz, 1.8f * 2, 3.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(0.1);
 		entityarrow.setKnockback(0);

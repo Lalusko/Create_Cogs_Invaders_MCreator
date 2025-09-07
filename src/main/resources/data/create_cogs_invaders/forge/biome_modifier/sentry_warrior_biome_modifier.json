@@ -1,6 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "badlands",
+  "biomes": "#minecraft:is_overworld",
   "spawners": {
     "type": "create_cogs_invaders:sentry_warrior",
     "weight": 1,

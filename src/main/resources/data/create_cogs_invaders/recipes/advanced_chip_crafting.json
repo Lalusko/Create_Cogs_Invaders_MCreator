@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "create_cogs_invaders:manufacturer_head"
+    }
+  },
+  "result": {
+    "item": "create_cogs_invaders:advanced_chip",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "create_cogs_invaders:dial_repair"
+    }
+  },
+  "result": {
+    "item": "create_cogs_invaders:armor_repair_station",
+    "count": 1
+  }
+}

@@ -1,6 +1,9 @@
 
 package net.mcreator.createcogsinvaders.block;
 
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.TooltipFlag;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -30,6 +33,9 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.createcogsinvaders.procedures.ARSBlockstatesProcedure;
 import net.mcreator.createcogsinvaders.init.CreateCogsInvadersModBlocks;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class ArmorRepairStationBlock extends Block {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 4);
@@ -145,5 +151,25 @@ public class ArmorRepairStationBlock extends Block {
 		Direction direction = hit.getDirection();
 		ARSBlockstatesProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack p_49816_, @Nullable BlockGetter p_49817_, List<Component> p_49818_, TooltipFlag p_49819_) {
+		if (Screen.hasShiftDown()) {
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.hold_shift.shift_down"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.space.shift_down"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.armor_repair_station.shift_down_0"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.armor_repair_station.shift_down_1"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.armor_repair_station.shift_down_2"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.space.shift_down"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.right_click_block.shift_down"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.armor_repair_station.shift_down_3"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.armor_repair_station.shift_down_4"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.armor_repair_station.shift_down_5"));
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.armor_repair_station.shift_down_6"));
+		} else {
+			p_49818_.add(Component.translatable("tooltip.create_cogs_invaders.hold_shift"));
+		}
+		super.appendHoverText(p_49816_, p_49817_, p_49818_, p_49819_);
 	}
 }

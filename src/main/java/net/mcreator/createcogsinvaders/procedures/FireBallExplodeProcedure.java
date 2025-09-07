@@ -10,7 +10,7 @@ public class FireBallExplodeProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, 1, Level.ExplosionInteraction.MOB);
+			_level.explode(null, x, y, z, 1, Level.ExplosionInteraction.NONE);
 		if (!(entity instanceof LivingEntity _livEnt1 && _livEnt1.isBlocking())) {
 			entity.setSecondsOnFire(5);
 		}
