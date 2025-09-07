@@ -26,7 +26,7 @@ public class MedkitCureProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreateCogsInvadersModItems.MEDKIT.get()
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 				hbLv1 = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(CreateCogsInvadersModEnchantments.HEALING_BOOST.get());
-				healAmt = 6 + 2 * hbLv1;
+				healAmt = 4 + 2 * hbLv1;
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + healAmt));
 				if (world instanceof Level _level) {
@@ -50,7 +50,7 @@ public class MedkitCureProcedure {
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == CreateCogsInvadersModItems.MEDKIT.get()
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 				hbLv1 = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getEnchantmentLevel(CreateCogsInvadersModEnchantments.HEALING_BOOST.get());
-				healAmt = 6 + 2 * hbLv1;
+				healAmt = 4 + 2 * hbLv1;
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + healAmt));
 				if (world instanceof Level _level) {

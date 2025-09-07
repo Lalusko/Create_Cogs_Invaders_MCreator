@@ -1,16 +1,30 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "a"
-  ],
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
   "key": {
-    "a": {
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "M": {
+      "item": "create_cogs_invaders:advanced_mechanism"
+    },
+    "D": {
       "item": "create_cogs_invaders:dial_repair"
+    },
+    "C": {
+      "item": "create_cogs_invaders:brass_glass_bottle"
+    },
+    "R": {
+      "item": "create:railway_casing"
     }
   },
+  "pattern": [
+    "  B  ",
+    "CBDBC",
+    "CBMBC",
+    "  R  "
+  ],
   "result": {
-    "item": "create_cogs_invaders:armor_repair_station",
-    "count": 1
+    "item": "create_cogs_invaders:armor_repair_station"
   }
 }

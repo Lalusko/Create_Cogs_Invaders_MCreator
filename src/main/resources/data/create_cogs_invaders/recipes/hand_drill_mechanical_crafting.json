@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "#": {
+      "item": "create:andesite_alloy"
+    },
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "create:andesite_casing"
+    },
+    "P": {
+      "item": "create_cogs_invaders:dynamic_mechanism"
+    }
+  },
+  "pattern": [
+    " #   ",
+    "#APB ",
+    " #B##"
+  ],
+  "result": {
+    "item": "create_cogs_invaders:hand_drill"
+  }
+}

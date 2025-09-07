@@ -1,0 +1,27 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "B": {
+      "item": "create:copper_sheet"
+    },
+    "M": {
+      "item": "create_cogs_invaders:electroconductive_mechanism"
+    },
+    "D": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "pattern": [
+    " R ",
+    "BMB",
+    "RDR",
+    " R "
+  ],
+  "result": {
+    "item": "create_cogs_invaders:tesla_shield"
+  }
+}

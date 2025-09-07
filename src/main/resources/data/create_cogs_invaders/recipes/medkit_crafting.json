@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create_cogs_invaders:dial_healing"
+    },
+    {
+      "item": "create_cogs_invaders:xp_container"
+    }
+  ],
+  "result": {
+    "item": "create_cogs_invaders:medkit",
+    "count": 1
+  }
+}

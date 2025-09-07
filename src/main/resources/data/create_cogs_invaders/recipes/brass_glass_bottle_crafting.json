@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " b ",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "create:brass_nugget"
+    },
+    "b": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "create_cogs_invaders:brass_glass_bottle",
+    "count": 1
+  }
+}

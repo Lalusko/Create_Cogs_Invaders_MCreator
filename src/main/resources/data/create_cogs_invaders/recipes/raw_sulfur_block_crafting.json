@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "create_cogs_invaders:raw_sulfur"
+    }
+  },
+  "result": {
+    "item": "create_cogs_invaders:raw_sulfur_block",
+    "count": 1
+  }
+}

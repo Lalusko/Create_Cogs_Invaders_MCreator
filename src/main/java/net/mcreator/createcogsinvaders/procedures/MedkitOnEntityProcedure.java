@@ -46,7 +46,7 @@ public class MedkitOnEntityProcedure {
 						&& !(sourceentity instanceof Player _plrCldCheck5 && _plrCldCheck5.getCooldowns().isOnCooldown((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()))
 						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 					hbLv1 = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(CreateCogsInvadersModEnchantments.HEALING_BOOST.get());
-					healAmt = 6 + 2 * hbLv1;
+					healAmt = 4 + 2 * hbLv1;
 					if (entity instanceof LivingEntity _entity)
 						_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + healAmt));
 					if (world instanceof Level _level) {
@@ -71,7 +71,7 @@ public class MedkitOnEntityProcedure {
 						&& !(sourceentity instanceof Player _plrCldCheck21 && _plrCldCheck21.getCooldowns().isOnCooldown((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()))
 						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 					hbLv1 = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getEnchantmentLevel(CreateCogsInvadersModEnchantments.HEALING_BOOST.get());
-					healAmt = 6 + 2 * hbLv1;
+					healAmt = 4 + 2 * hbLv1;
 					if (entity instanceof LivingEntity _entity)
 						_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + healAmt));
 					if (world instanceof Level _level) {

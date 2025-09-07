@@ -1,0 +1,66 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_cogs_invaders:brass_glass_bottle"
+  },
+  "transitionalItem": {
+    "item": "create_cogs_invaders:brass_glass_bottle"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "create_cogs_invaders:brass_glass_bottle" },
+        { "item": "create:experience_nugget" }
+      ],
+      "results": [ { "item": "create_cogs_invaders:brass_glass_bottle" } ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "create_cogs_invaders:brass_glass_bottle" },
+        { "item": "create:experience_nugget" }
+      ],
+      "results": [ { "item": "create_cogs_invaders:brass_glass_bottle" } ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "create_cogs_invaders:brass_glass_bottle" },
+        { "item": "create:experience_nugget" }
+      ],
+      "results": [ { "item": "create_cogs_invaders:brass_glass_bottle" } ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "create_cogs_invaders:brass_glass_bottle" },
+        { "item": "create:experience_nugget" }
+      ],
+      "results": [ { "item": "create_cogs_invaders:brass_glass_bottle" } ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "create_cogs_invaders:brass_glass_bottle" },
+        { "tag": "forge:nuggets/brass" }
+      ],
+      "results": [ { "item": "create_cogs_invaders:brass_glass_bottle" } ]
+    }
+  ],
+  "results": [
+    {
+      "item": "create_cogs_invaders:xp_container",
+      "chance": 120.0
+    },
+    {
+      "item": "create_cogs_invaders:brass_glass_bottle",
+      "chance": 8.0
+    },
+    {
+      "item": "create:brass_nugget",
+      "chance": 4.0
+    }
+  ],
+  "loops": 1
+}
