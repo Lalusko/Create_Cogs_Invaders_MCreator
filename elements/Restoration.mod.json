@@ -5,7 +5,7 @@
     "name": "Restoration",
     "supportedSlots": "hand",
     "weight": 5,
-    "anvilCost": 5,
+    "anvilCost": 10,
     "maxLevel": 3,
     "damageModifier": 0,
     "incompatibleEnchantments": [

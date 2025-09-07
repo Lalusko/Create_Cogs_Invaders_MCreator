@@ -5,7 +5,7 @@
     "name": "Limit Breack",
     "supportedSlots": "hand",
     "weight": 5,
-    "anvilCost": 1,
+    "anvilCost": 30,
     "maxLevel": 1,
     "damageModifier": 0,
     "incompatibleEnchantments": [],

@@ -42,7 +42,7 @@
     "recipeReturnStack": {
       "value": "Items.NETHERITE_INGOT"
     },
-    "name": "netherite_ingot_mixing",
+    "name": "netherite_ingot",
     "namespace": "minecraft"
   }
 }
