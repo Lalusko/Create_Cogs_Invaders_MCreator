@@ -9,12 +9,12 @@ import net.mcreator.createcogsinvaders.item.NetheriteHandDrillItem;
 public class NetheriteHandDrillItemModel extends GeoModel<NetheriteHandDrillItem> {
 	@Override
 	public ResourceLocation getAnimationResource(NetheriteHandDrillItem animatable) {
-		return new ResourceLocation("create_cogs_invaders", "animations/hand_drill.animation.json");
+		return new ResourceLocation("create_cogs_invaders", "animations/handdrill.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(NetheriteHandDrillItem animatable) {
-		return new ResourceLocation("create_cogs_invaders", "geo/hand_drill.geo.json");
+		return new ResourceLocation("create_cogs_invaders", "geo/handdrill.geo.json");
 	}
 
 	@Override
