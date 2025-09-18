@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "andesite_hand_drill",
+    "texture": "hand_drill",
     "name": "Hand Drill",
     "idle": "Idle",
     "rarity": "COMMON",
