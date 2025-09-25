@@ -159,7 +159,7 @@ public class TeslaGunItem extends Item implements GeoItem {
 			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_0"));
 			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_1"));
 			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_2"));
-			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_cannon.shift_down_3"));
+			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.tesla_gun.shift_down_0"));
 			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.space.shift_down"));
 			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.right_click.shift_down"));
 			tooltip.add(Component.translatable("tooltip.create_cogs_invaders.shoot.shift_down"));

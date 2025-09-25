@@ -247,7 +247,8 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
-      "minecraft:vindicator": "2025-09-04 14:52:45 -0600"
+      "minecraft:vindicator": "2025-09-04 14:52:45 -0600",
+      "minecraft:husk": "2025-09-25 12:17:34 -0600"
     },
     "done": false
   },

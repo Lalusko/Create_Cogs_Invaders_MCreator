@@ -272,7 +272,7 @@ public class ExplorerEntity extends Monster implements RangedAttackMob, GeoEntit
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		ElectroshockChargeEntity.shoot(this, target);
+		ElectricChargeEntity.shoot(this, target);
 	}
 
 	public static void init() {

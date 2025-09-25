@@ -140,7 +140,7 @@
     "rangedAttackItem": {
       "value": ""
     },
-    "rangedItemType": "ElectroshockCharge",
+    "rangedItemType": "ElectricCharge",
     "rangedAttackInterval": 60,
     "rangedAttackRadius": 20.0,
     "height": 1.82,

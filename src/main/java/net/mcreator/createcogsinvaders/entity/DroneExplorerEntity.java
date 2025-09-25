@@ -287,7 +287,7 @@ public class DroneExplorerEntity extends Monster implements RangedAttackMob, Geo
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		ElectroshockChargeEntity.shoot(this, target);
+		ElectricChargeEntity.shoot(this, target);
 	}
 
 	@Override
