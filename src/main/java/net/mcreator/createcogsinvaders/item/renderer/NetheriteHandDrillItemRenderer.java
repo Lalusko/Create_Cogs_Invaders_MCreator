@@ -29,7 +29,7 @@ public class NetheriteHandDrillItemRenderer extends GeoItemRenderer<NetheriteHan
 	}
 
 	private static final float SCALE_RECIPROCAL = 1.0f / 16.0f;
-	protected boolean renderArms = false;
+	protected boolean renderArms = true;
 	protected MultiBufferSource currentBuffer;
 	protected RenderType renderType;
 	public ItemDisplayContext transformType;
@@ -51,7 +51,7 @@ public class NetheriteHandDrillItemRenderer extends GeoItemRenderer<NetheriteHan
 		this.animatable = animatable;
 		super.actuallyRender(matrixStackIn, animatable, model, type, renderTypeBuffer, vertexBuilder, isRenderer, partialTicks, packedLightIn, packedOverlayIn, red, green, blue, alpha);
 		if (this.renderArms) {
-			this.renderArms = false;
+			this.renderArms = true;
 		}
 	}
 

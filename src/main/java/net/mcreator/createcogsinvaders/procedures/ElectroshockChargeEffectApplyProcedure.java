@@ -30,7 +30,7 @@ public class ElectroshockChargeEffectApplyProcedure {
 			}
 		}
 
-		if ((ignoreLimit || targetHP < 50.0f) && !targetBlocking) {
+		if ((ignoreLimit || targetHP < 100.0f) && !targetBlocking) {
 			if (entity instanceof LivingEntity liv && !liv.level().isClientSide())
 				liv.addEffect(new MobEffectInstance(CreateCogsInvadersModMobEffects.ELECTROSHOCK.get(), 120, 0));
 		}

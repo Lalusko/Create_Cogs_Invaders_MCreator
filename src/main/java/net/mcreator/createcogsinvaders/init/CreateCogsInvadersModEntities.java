@@ -26,6 +26,7 @@ import net.mcreator.createcogsinvaders.entity.ExplorerEntity;
 import net.mcreator.createcogsinvaders.entity.EliteWarriorEntity;
 import net.mcreator.createcogsinvaders.entity.ElitePistolEntity;
 import net.mcreator.createcogsinvaders.entity.ElectroshockChargeEntity;
+import net.mcreator.createcogsinvaders.entity.ElectricChargeEntity;
 import net.mcreator.createcogsinvaders.entity.DroneExplorerEntity;
 import net.mcreator.createcogsinvaders.entity.ChemistEntity;
 import net.mcreator.createcogsinvaders.entity.BrassPelletWitherEntity;
@@ -75,6 +76,8 @@ public class CreateCogsInvadersModEntities {
 			EntityType.Builder.<FireBallEntity>of(FireBallEntity::new, MobCategory.MISC).setCustomClientFactory(FireBallEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.3f, 0.3f));
 	public static final RegistryObject<EntityType<BrassPelletWitherEntity>> BRASS_PELLET_WITHER = register("brass_pellet_wither", EntityType.Builder.<BrassPelletWitherEntity>of(BrassPelletWitherEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(BrassPelletWitherEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.2f, 0.2f));
+	public static final RegistryObject<EntityType<ElectricChargeEntity>> ELECTRIC_CHARGE = register("electric_charge", EntityType.Builder.<ElectricChargeEntity>of(ElectricChargeEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(ElectricChargeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.25f, 0.25f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

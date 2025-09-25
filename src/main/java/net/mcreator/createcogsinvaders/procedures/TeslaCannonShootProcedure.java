@@ -84,7 +84,7 @@ public class TeslaCannonShootProcedure {
 
 			TeslaCannonItem.setEnergy(main, energy - 1);
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(main.getItem(), 15);
+				_player.getCooldowns().addCooldown(main.getItem(), 60);
 
 			if (main.hurt(1, RandomSource.create(), null)) {
 				main.shrink(1);

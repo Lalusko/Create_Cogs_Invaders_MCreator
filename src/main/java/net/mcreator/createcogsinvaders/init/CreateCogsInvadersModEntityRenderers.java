@@ -43,5 +43,6 @@ public class CreateCogsInvadersModEntityRenderers {
 		event.registerEntityRenderer(CreateCogsInvadersModEntities.ELITE_WARRIOR.get(), EliteWarriorRenderer::new);
 		event.registerEntityRenderer(CreateCogsInvadersModEntities.FIRE_BALL.get(), FireBallRenderer::new);
 		event.registerEntityRenderer(CreateCogsInvadersModEntities.BRASS_PELLET_WITHER.get(), BrassPelletWitherRenderer::new);
+		event.registerEntityRenderer(CreateCogsInvadersModEntities.ELECTRIC_CHARGE.get(), ThrownItemRenderer::new);
 	}
 }

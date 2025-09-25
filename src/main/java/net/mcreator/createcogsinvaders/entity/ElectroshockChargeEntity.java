@@ -123,11 +123,11 @@ public class ElectroshockChargeEntity extends AbstractArrow implements ItemSuppl
 	}
 
 	public static ElectroshockChargeEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 1.8f, 0.1, 0);
+		return shoot(world, entity, source, 1.0f, 0.1, 0);
 	}
 
 	public static ElectroshockChargeEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
-		return shoot(world, entity, source, pullingPower * 1.8f, 0.1, 0);
+		return shoot(world, entity, source, pullingPower * 1.0f, 0.1, 0);
 	}
 
 	public static ElectroshockChargeEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -148,7 +148,7 @@ public class ElectroshockChargeEntity extends AbstractArrow implements ItemSuppl
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY(), dz, 1.8f * 2, 3.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY(), dz, 1.0f * 2, 3.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(0.1);
 		entityarrow.setKnockback(0);

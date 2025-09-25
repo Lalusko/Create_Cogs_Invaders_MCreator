@@ -8,6 +8,7 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.item.ItemStack;
 
+import net.mcreator.createcogsinvaders.item.TeslaGunItem;
 import net.mcreator.createcogsinvaders.item.TeslaCannonItem;
 import net.mcreator.createcogsinvaders.item.NetheriteHandDrillItem;
 import net.mcreator.createcogsinvaders.item.HandDrillItem;
@@ -71,6 +72,24 @@ public class ItemAnimationFactory {
 					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
 						((NetheriteHandDrillItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof TeslaGunItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((TeslaGunItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof TeslaGunItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((TeslaGunItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
 					}
 				}
 			}

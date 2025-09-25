@@ -1,5 +1,5 @@
 {
-  "parent": "create_cogs_invaders:displaysettings/handdrill",
+  "parent": "create_cogs_invaders:displaysettings/netherite_hand_drill",
   "textures": {
     "layer0": "create_cogs_invaders:item/netherite_hand_drill"
   }

@@ -32,6 +32,7 @@ public class CreateCogsInvadersModTabs {
 				tabData.accept(CreateCogsInvadersModItems.REPAIR_KIT.get());
 				tabData.accept(CreateCogsInvadersModItems.HAND_DRILL.get());
 				tabData.accept(CreateCogsInvadersModItems.NETHERITE_HAND_DRILL.get());
+				tabData.accept(CreateCogsInvadersModItems.TESLA_GUN.get());
 				tabData.accept(CreateCogsInvadersModItems.TESLA_CANNON.get());
 				tabData.accept(CreateCogsInvadersModItems.TESLA_SHIELD.get());
 				tabData.accept(CreateCogsInvadersModItems.RAW_SULFUR.get());
